@@ -1,0 +1,14 @@
+name: 'tsm_dataanalyse'
+version: '1.0.0'
+profile: 'tsm_dataanalyse'
+flags:
+  send_anonymous_usage_stats: False # stopper datasending
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+model-paths: ["models"]
+
+models:
+  tsm_datanalyse:
+    +materialized: view

@@ -1,0 +1,15 @@
+tsm_dataanalyse:
+  target: "{{ env_var('DBT_TARGET', 'dev') }}"
+  outputs:
+    prod:
+      type: bigquery
+      method: oauth
+      project: teamsykmelding-prod-2acd
+      dataset: dbt
+      threads: 1
+    dev:
+      type: bigquery
+      method: oauth
+      project: teamsykmelding-dev-1d34
+      dataset: dbt
+      threads: 1

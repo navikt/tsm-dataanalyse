@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: teamsykmelding_data 
+    database: teamsykmelding-prod-2acd
+    schema: teamsykmelding_data
+    tables: 
+      - name: dim_helsepersonellkategori
+      
