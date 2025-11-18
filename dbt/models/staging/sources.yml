@@ -1,9 +1,9 @@
 version: 2
 
 sources:
-  - name: teamsykmelding_data 
-    database: teamsykmelding-prod-2acd
-    schema: teamsykmelding_data
+  - name: tsm_dataset_dev
+    database: tsm-dev-6602
+    schema: tsm_dataset
     tables: 
-      - name: dim_helsepersonellkategori
+      - name: regulus_maximus
       

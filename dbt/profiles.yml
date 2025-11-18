@@ -4,12 +4,14 @@ tsm_dataanalyse:
     prod:
       type: bigquery
       method: oauth
-      project: teamsykmelding-prod-2acd
+      project: tsm-prod-1dab
       dataset: dbt
       threads: 1
+      location: europe-north1
     dev:
       type: bigquery
       method: oauth
-      project: teamsykmelding-dev-1d34
+      project: tsm-dev-6602
       dataset: dbt
       threads: 1
+      location: europe-north1
