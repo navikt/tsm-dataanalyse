@@ -1,3 +1,5 @@
+
+
 name: 'tsm_dataanalyse'
 version: '1.0.0'
 profile: 'tsm_dataanalyse'
@@ -7,8 +9,22 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
+
+
 model-paths: ["models"]
+macro-paths: ["macros"]
+
+
 
 models:
-  tsm_datanalyse:
+  tsm_dataanalyse:
+
     +materialized: view
+
+    staging:
+      +schema: staging
+    intermediate:
+      +schema: intermediate
+    marts:
+      +schema: marts
+      +materialized: table
