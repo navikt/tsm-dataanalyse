@@ -5,6 +5,5 @@ sources:
   - name: tsm_dataset_dev
     database: tsm-dev-6602
     schema: tsm_dataset
-    tables: 
+    tables:
       - name: regulus_maximus
-
