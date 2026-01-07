@@ -30,6 +30,8 @@ dbt (data build tool) lar deg definere SQL-transformasjoner som modeller, versjo
 
 ## Modeller
 ### Overordnet prosjektstruktur
+
+```
 .
 ├─ dbt/
 │  └─  macros/                          # Gjenbrukbare funksjoner / Jinja
@@ -41,6 +43,7 @@ dbt (data build tool) lar deg definere SQL-transformasjoner som modeller, versjo
 │      └─ exposed_access_controlled/    # Eksponert på datamarkedsplassen, men tilgangsstyrt
 │  └─ dbt_project.yml                   # Prosjektkonfig
 │  └─ profiles.yml                      # Definerer BigQuery-tilkobling
+```
 
 #### staging (kilder)
 Formål: Standardisere kolonnenavn, datatyper, trimme/null-håndtere, fjerne duplikater.
