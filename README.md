@@ -9,8 +9,8 @@ Installer just med 'brew install just'. Just er en task/command runner, et verkt
 
 For å autentisere mot BigQuery og GCP kan du kjøre just login. For lint go pre-commit kan du kjøre just lint. Kommandoene ligger definert i justfile.
 
-Vi bruker pre-commit for å kjøre sjekker på koden når man kjører git commit. Ved å bruke pre-commit skjer denne sjekken før koden blir lagret til git. Man kan også manuelt kjøre pre-commit ved å kjøre 'just lint'.
-pre-commit er konfigurert i .pre-commit-config.yml
+Vi bruker pre-commit for å kjøre sjekker på koden når man kjører git commit. Install pre-commit hvis du ikke har det 'uv pip install pre-commit'. Ved å bruke pre-commit skjer denne sjekken før koden blir lagret til git. Man kan også manuelt kjøre pre-commit ved å kjøre 'just lint' hvis man bruker just.
+pre-commit er konfigurert i .pre-commit-config.yml. 
 
 ## DBT
 dbt prosjeketer må intialiseres første gang de skal kjøres, dette gjøres med kommandoen 'dbt init'.
@@ -38,7 +38,7 @@ dbt (data build tool) lar deg definere SQL-transformasjoner som modeller, versjo
 │      ├─ intermediate/                 # Joiner, aggregerer og beriker (fler-til-en)
 │      ├─ marts/                        # Forretningslag (dim/ fact / datasett til rapporter)
 │      ├─ exposed/                      # Tabeller som eksponeres på datamarkedsplassen
-│      └─ exposed_access_controlled/    # Tabeller som eksponeres på datamarkedsplassen men er tilgangsstyrt
+│      └─ exposed_access_controlled/    # Eksponert på datamarkedsplassen, men tilgangsstyrt
 │  └─ dbt_project.yml                   # Prosjektkonfig
 │  └─ profiles.yml                      # Definerer BigQuery-tilkobling
 
