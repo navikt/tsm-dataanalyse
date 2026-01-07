@@ -5,8 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "dbt-bigquery>=1.10.2",
-    "dbt-core>=1.10.13",
+    "dbt-bigquery==1.11.0",
+    "dbt-core==1.11.2",
 ]
 
 [dependency-groups]
