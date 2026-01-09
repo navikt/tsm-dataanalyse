@@ -18,7 +18,7 @@ dbt prosjeketer må intialiseres første gang de skal kjøres, dette gjøres med
 dbt (data build tool) lar deg definere SQL-transformasjoner som modeller, versjonskontrollere dem, og kjøre dem deterministisk mot et datavarehus (BigQuery). dbt håndterer avhengigheter, materialisering (view/table), testing, dokumentasjon og miljøer
 
 ### Vanlige dbt kommandoer
-
+```
 'dbt debug' - Sjekker tilkobling mot BigQuery og om dbt er riktig satt opp.
 'dbt run' - Kjører alle modeller. Target avhenger av profiles.yml
     'dbt run --select staging' - For å kjøre spesiefikke lag eller modell.
@@ -27,6 +27,7 @@ dbt (data build tool) lar deg definere SQL-transformasjoner som modeller, versjo
 'dbt docs generate' - Genererer dokumentasjon for modellene.
 'dbt docs serve' - Starter en lokal doc-server.
 'dbt build' - Bygge alt i riktig rekkefølge
+```
 
 ## Modeller
 ### Overordnet prosjektstruktur
