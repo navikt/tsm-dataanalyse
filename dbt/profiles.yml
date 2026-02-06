@@ -4,14 +4,14 @@ tsm_dataanalyse:
     prod:
       type: bigquery
       method: oauth
-      project: tsm-prod-1dab
+      project: "{{ env_var('DBT_DATABASE') }}"
       dataset: dbt
       threads: 1
-      location: europe-north1
+      location: "{{ env_var('DBT_LOCATION') }}"
     dev:
       type: bigquery
       method: oauth
-      project: tsm-dev-6602
+      project: "{{ env_var('DBT_DATABASE') }}"
       dataset: dbt
       threads: 1
-      location: europe-north1
+      location: "{{ env_var('DBT_LOCATION') }}"
