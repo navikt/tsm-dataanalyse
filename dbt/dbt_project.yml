@@ -31,4 +31,4 @@ models:
     exposed:
       +schema: exposed
     exposed_access_controlled:
-      +schema: exposed
+      +schema: exposed_access_controlled
