@@ -260,7 +260,7 @@ wheels = [
 
 [[package]]
 name = "dbt-core"
-version = "1.11.2"
+version = "1.11.4"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
 dependencies = [
     { name = "agate" },
@@ -286,9 +286,9 @@ dependencies = [
     { name = "sqlparse" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-core/dbt_core-1.11.2.tar.gz", hash = "sha256:3306fee149b9f4e648071f2c9a46c0551100e1c829f13ad7ce026eb7226ad454" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-core/dbt_core-1.11.4.tar.gz", hash = "sha256:1eb66ce5ee691b20cf635e906602c6890b90da8f63639ff3b7f371dc240492ce" }
 wheels = [
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-core/dbt_core-1.11.2-py3-none-any.whl", hash = "sha256:ac332fd61a4494494f48e1bbdc0696e309e79036b94eb0a929233bb71f4b3898" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-core/dbt_core-1.11.4-py3-none-any.whl", hash = "sha256:49dcf1b70b958f6433e4a3f64c42865d98593fb5f17dfe8e651520ba939a71e3" },
 ]
 
 [[package]]
@@ -1706,11 +1706,11 @@ wheels = [
 
 [[package]]
 name = "sqlparse"
-version = "0.5.3"
+version = "0.5.4"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
-sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/sqlparse/sqlparse-0.5.3.tar.gz", hash = "sha256:09f67787f56a0b16ecdbde1bfc7f5d9c3371ca683cfeaa8e6ff60b4807ec9272" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/sqlparse/sqlparse-0.5.4.tar.gz", hash = "sha256:4396a7d3cf1cd679c1be976cf3dc6e0a51d0111e87787e7a8d780e7d5a998f9e" }
 wheels = [
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/sqlparse/sqlparse-0.5.3-py3-none-any.whl", hash = "sha256:cf2196ed3418f3ba5de6af7e82c694a9fbdbfecccdfc72e281548517081f16ca" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/sqlparse/sqlparse-0.5.4-py3-none-any.whl", hash = "sha256:99a9f0314977b76d776a0fcb8554de91b9bb8a18560631d6bc48721d07023dcb" },
 ]
 
 [[package]]
@@ -1757,9 +1757,9 @@ lint = [
 
 [package.metadata]
 requires-dist = [
-    { name = "dbt-bigquery", specifier = "==1.11.0" },
-    { name = "dbt-core", specifier = "==1.11.2" },
-    { name = "google-cloud-bigquery", specifier = "==3.40.0" },
+    { name = "dbt-bigquery", specifier = ">=1.11,<1.12" },
+    { name = "dbt-core", specifier = ">=1.11,<1.12" },
+    { name = "google-cloud-bigquery", specifier = ">=3.40,<4.0" },
 ]
 
 [package.metadata.requires-dev]
