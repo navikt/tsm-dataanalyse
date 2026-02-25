@@ -1,0 +1,10 @@
+macros:
+  - name: extract_json_fields
+    description: "A macro to extract fields from a json cloumn, and give a name to the new extracted column"
+    arguments:
+      - name: column
+        type: column
+        description: "The name of the coulmn containing json data"
+      - name: mapping
+        type: dict[str, str]
+        description: "A list of objects specifying which json keys to extract and the column names to assign them. List of {key, name} objects."

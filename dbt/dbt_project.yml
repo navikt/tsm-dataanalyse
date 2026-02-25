@@ -1,10 +1,9 @@
-
-
 name: 'tsm_dataanalyse'
 version: '1.0.0'
 profile: 'tsm_dataanalyse'
 flags:
   send_anonymous_usage_stats: false # stopper datasending
+  validate_macro_args: False # validerer macro types
 clean-targets:
   - "target"
   - "dbt_packages"
