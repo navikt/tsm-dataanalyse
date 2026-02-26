@@ -3,13 +3,13 @@ DBT-prosjekt for Team-symfoni.
 
 ---
 uv brukes for prosjektstyring og håndtering av avhengigheter.
-just brukes for å kjøre kommandoer som ofte gjentas
+just brukes for å kjøre kommandoer som ofte gjentas.
 
-Installer just med 'brew install just'. Just er en task/command runner, et verktøy som blir brukt for å definere og kjøre kommandoer. Kjør 'just --list' for å sjekke komandoene.
+Installer just med 'brew install just'. Just er en task/command runner, et verktøy som blir brukt for å definere og kjøre kommandoer. Kjør 'just --list' for å sjekke komandoene eller sjekk justfile.
 
-For å autentisere mot BigQuery og GCP kan du kjøre just login. For linting og pre-commit kan du kjøre just lint. Kommandoene ligger definert i justfile.
+For å autentisere mot BigQuery og GCP kan man bruke just login. For linting og pre-commit kan man bruke just lint.
 
-Vi bruker pre-commit for å kjøre sjekker på koden når man kjører git commit. Install pre-commit hvis du ikke har det med 'uv pip install pre-commit' + 'pre-commit install' for å legge til i hooks. Ved å bruke pre-commit skjer denne sjekken før koden blir lagret til git. Man kan også manuelt kjøre pre-commit ved å kjøre 'just lint' hvis man bruker just.
+Vi bruker pre-commit for å kjøre sjekker på koden før commit. Install pre-commit med 'uv pip install pre-commit' + 'pre-commit install' for å legge til i hooks. Ved å bruke pre-commit skjer denne sjekken før koden blir lagret til git. Man kan også manuelt kjøre pre-commit ved å kjøre 'just lint' hvis man bruker just.
 pre-commit er konfigurert i .pre-commit-config.yml.
 
 ## DBT
@@ -51,7 +51,7 @@ Formål: Standardisere kolonnenavn, datatyper, trimme/null-håndtere, fjerne dup
 Views
 
 #### intermediate (transformasjonser)
-Formål: Joiner på tvers av kilder, beriker og aggregerer.
+Formål: Joiner på tvers av kilder, beriker, utvider nestede data og aggregerer.
 
 #### marts (forretnings-/analyselag)
-Formål: Fakta- og dimensjonstabeller for rapportering og BI.
+Formål: Entity-based models, som brukes videre til rapportering og BI.
