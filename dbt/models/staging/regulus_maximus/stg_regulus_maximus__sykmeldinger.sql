@@ -1,28 +1,33 @@
-with src as(
-  SELECT sykmelding_id,
+with
+
+src as (
+
+  SELECT
+    sykmelding_id,
     fom,
     tom,
     JSON_VALUE(validation, '$.status') AS last_status,
     JSON_QUERY_ARRAY(sykmelding, '$.aktivitet') AS aktivitet,
     JSON_QUERY_ARRAY(validation, '$.rules') as rules_array,
     {{ extract_json_fields(
-      'sykmelding',
-      [ {'key': 'type', 'name': 'sm_type'},
-    {'key':'prognose.arbeid', 'name': 'prognose_arbeid' },
-    {'key':'prognose.hensynArbeidsplassen', 'name': 'prognose_hensynArbeidsplassen' },
-    {'key':'prognose.arbeidsforEtterPeriode', 'name': 'arbeidsforEtterPeriode' },
-    {'key':'metadata.mottattDato', 'name': 'mottattDato' },
-    {'key':'metadata.avsenderSystem.navn', 'name': 'avsenderSystem_navn' },
-    {'key':'metadata.avsenderSystem.versjon', 'name': 'avsenderSystem_versjon' },
-    {'key':'metadata.regelsettVersjon', 'name': 'regelsettVersjon' },
-    {'key':'metadata.behandletTidspunkt', 'name': 'behandletTidspunkt' },
-    {'key':'sykmelder.helsepersonellKategori', 'name': 'helsepersonellKategori' },
-    {'key':'arbeidsgiver.navn', 'name': 'arbeidsgiver_navn' },
-    {'key':'arbeidsgiver.type', 'name': 'arbeidsgiver_type' },
-    {'key':'medisinskVurdering.hovedDiagnose.system', 'name': 'hoveddiagnose_system' },
-    {'key':'medisinskVurdering.syketilfelletStartDato', 'name': 'syketilfelletStartDato' }
-    ]
-    ) }},
+      'sykmelding', [
+        {'key': 'type', 'name': 'sm_type'},
+        {'key':'prognose.arbeid', 'name': 'prognose_arbeid' },
+        {'key':'prognose.hensynArbeidsplassen', 'name': 'prognose_hensynArbeidsplassen' },
+        {'key':'prognose.arbeidsforEtterPeriode', 'name': 'arbeidsforEtterPeriode' },
+        {'key':'metadata.mottattDato', 'name': 'mottattDato' },
+        {'key':'metadata.avsenderSystem.navn', 'name': 'avsenderSystem_navn' },
+        {'key':'metadata.avsenderSystem.versjon', 'name': 'avsenderSystem_versjon' },
+        {'key':'metadata.regelsettVersjon', 'name': 'regelsettVersjon' },
+        {'key':'metadata.behandletTidspunkt', 'name': 'behandletTidspunkt' },
+        {'key':'sykmelder.helsepersonellKategori', 'name': 'helsepersonellKategori' },
+        {'key':'arbeidsgiver.navn', 'name': 'arbeidsgiver_navn' },
+        {'key':'arbeidsgiver.type', 'name': 'arbeidsgiver_type' },
+        {'key':'medisinskVurdering.hovedDiagnose.system', 'name': 'hoveddiagnose_system' },
+        {'key':'medisinskVurdering.syketilfelletStartDato', 'name': 'syketilfelletStartDato' }
+        ]
+      )
+    }},
     JSON_VALUE(sykmelding, '$.tilbakedatering.kontaktDato') tilbakedatering_kontaktDato,
     JSON_VALUE(sykmelding, '$.tilbakedatering.begrunnelse') tilbakedatering_begrunnelse,
     JSON_VALUE(metadata, '$.mottakenhetBlokk.avsender') orgnummer_mottakenhetBlokk,
@@ -31,10 +36,13 @@ with src as(
     JSON_QUERY_ARRAY(sykmelding, '$.behandler.ids') as behandler_ids,
     JSON_QUERY_ARRAY(sykmelding, '$.sykmelder.ids') as sykmelder_ids,
     JSON_QUERY(sykmelding, '$.utdypendeOpplysninger') as utdypendeOpplysninger,
-    FROM {{ source('tsm_dataset', 'regulus_maximus') }}
+
+  FROM {{ source('tsm_dataset', 'regulus_maximus') }}
+
 ),
 
-final as(
+final as (
+
   SELECT
     sykmelding_id as id,
     fom,
@@ -57,7 +65,9 @@ final as(
     sender_ids,
     behandler_ids,
     sykmelder_ids,
+
     FROM src
+
 )
 
 SELECT * FROM final

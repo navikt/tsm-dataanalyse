@@ -13,3 +13,6 @@ lint:
 # Logger inn i GCP
 login:
     gcloud auth login --update-adc
+# Autentiseringsnøkkel for directory for pypi artifact registry
+auth:
+    pypi-auth

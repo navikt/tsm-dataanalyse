@@ -19,4 +19,4 @@ profiles.yml
 .env
 *.env
 
-analyser/*
+analyses/*
