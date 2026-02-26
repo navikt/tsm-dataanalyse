@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_regulus_maximus__sykmeldinger
+    description: "{{ doc('stg_sykmeldinger')}}"
+
+    columns:
+      - name: id
+        description: Dette er en unik identifikator for sykmeldinger
+        data_tests:
+            - unique
+            - not_null
