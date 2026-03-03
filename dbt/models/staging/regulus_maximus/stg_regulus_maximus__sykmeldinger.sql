@@ -36,6 +36,7 @@ src as (
     JSON_QUERY_ARRAY(sykmelding, '$.behandler.ids') as behandler_ids,
     JSON_QUERY_ARRAY(sykmelding, '$.sykmelder.ids') as sykmelder_ids,
     JSON_QUERY(sykmelding, '$.utdypendeOpplysninger') as utdypendeOpplysninger,
+    generated_date,
 
   FROM {{ source('tsm_dataset', 'regulus_maximus') }}
 
@@ -55,6 +56,8 @@ final as (
     prognose_hensynArbeidsplassen,
     arbeidsforEtterPeriode,
     DATE(LEFT(mottattDato, 10)) mottattDato,
+    format_timestamp('%Y-%m-%d %H:%M:%S UTC', generated_date, 'UTC') generated_timestamp,
+    DATE(generated_date) generertDato,
     avsenderSystem_navn,
     regelsettVersjon,
     helsepersonellKategori,
