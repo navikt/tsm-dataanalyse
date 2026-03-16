@@ -156,6 +156,24 @@ wheels = [
 ]
 
 [[package]]
+name = "appnope"
+version = "0.1.4"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/appnope/appnope-0.1.4.tar.gz", hash = "sha256:1de3860566df9caf38f01f86f65e0e13e379af54f9e4bee1e66b48f2efffd1ee" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/appnope/appnope-0.1.4-py2.py3-none-any.whl", hash = "sha256:502575ee11cd7a28c0205f379b525beefebab9d161b7c964670864014ed7213c" },
+]
+
+[[package]]
+name = "asttokens"
+version = "3.0.1"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/asttokens/asttokens-3.0.1.tar.gz", hash = "sha256:71a4ee5de0bde6a31d64f6b13f2293ac190344478f081c3d1bccfcf5eacb0cb7" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/asttokens/asttokens-3.0.1-py3-none-any.whl", hash = "sha256:15a3ebc0f43c2d0a50eeafea25e19046c68398e487b9f1f5b517f7c0f40f976a" },
+]
+
+[[package]]
 name = "attrs"
 version = "25.4.0"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
@@ -324,6 +342,15 @@ source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/
 sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/colorama/colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44" }
 wheels = [
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/colorama/colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6" },
+]
+
+[[package]]
+name = "comm"
+version = "0.2.3"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/comm/comm-0.2.3.tar.gz", hash = "sha256:2dc8048c10962d55d7ad693be1e7045d891b7ce8d999c97963a5e3e99c055971" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/comm/comm-0.2.3-py3-none-any.whl", hash = "sha256:c615d91d75f7f04f095b30d1c1711babd43bdc6419c1be9886a85f2f4e489417" },
 ]
 
 [[package]]
@@ -555,6 +582,36 @@ wheels = [
 ]
 
 [[package]]
+name = "debugpy"
+version = "1.8.20"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/debugpy/debugpy-1.8.20.tar.gz", hash = "sha256:55bc8701714969f1ab89a6d5f2f3d40c36f91b2cbe2f65d98bf8196f6a6a2c33" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/debugpy/debugpy-1.8.20-cp312-cp312-macosx_15_0_universal2.whl", hash = "sha256:4ae3135e2089905a916909ef31922b2d733d756f66d87345b3e5e52b7a55f13d" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/debugpy/debugpy-1.8.20-cp312-cp312-manylinux_2_34_x86_64.whl", hash = "sha256:88f47850a4284b88bd2bfee1f26132147d5d504e4e86c22485dfa44b97e19b4b" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/debugpy/debugpy-1.8.20-cp312-cp312-win32.whl", hash = "sha256:4057ac68f892064e5f98209ab582abfee3b543fb55d2e87610ddc133a954d390" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/debugpy/debugpy-1.8.20-cp312-cp312-win_amd64.whl", hash = "sha256:a1a8f851e7cf171330679ef6997e9c579ef6dd33c9098458bd9986a0f4ca52e3" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/debugpy/debugpy-1.8.20-cp313-cp313-macosx_15_0_universal2.whl", hash = "sha256:5dff4bb27027821fdfcc9e8f87309a28988231165147c31730128b1c983e282a" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/debugpy/debugpy-1.8.20-cp313-cp313-manylinux_2_34_x86_64.whl", hash = "sha256:84562982dd7cf5ebebfdea667ca20a064e096099997b175fe204e86817f64eaf" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/debugpy/debugpy-1.8.20-cp313-cp313-win32.whl", hash = "sha256:da11dea6447b2cadbf8ce2bec59ecea87cc18d2c574980f643f2d2dfe4862393" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/debugpy/debugpy-1.8.20-cp313-cp313-win_amd64.whl", hash = "sha256:eb506e45943cab2efb7c6eafdd65b842f3ae779f020c82221f55aca9de135ed7" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/debugpy/debugpy-1.8.20-cp314-cp314-macosx_15_0_universal2.whl", hash = "sha256:9c74df62fc064cd5e5eaca1353a3ef5a5d50da5eb8058fcef63106f7bebe6173" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/debugpy/debugpy-1.8.20-cp314-cp314-manylinux_2_34_x86_64.whl", hash = "sha256:077a7447589ee9bc1ff0cdf443566d0ecf540ac8aa7333b775ebcb8ce9f4ecad" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/debugpy/debugpy-1.8.20-cp314-cp314-win32.whl", hash = "sha256:352036a99dd35053b37b7803f748efc456076f929c6a895556932eaf2d23b07f" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/debugpy/debugpy-1.8.20-cp314-cp314-win_amd64.whl", hash = "sha256:a98eec61135465b062846112e5ecf2eebb855305acc1dfbae43b72903b8ab5be" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/debugpy/debugpy-1.8.20-py2.py3-none-any.whl", hash = "sha256:5be9bed9ae3be00665a06acaa48f8329d2b9632f15fd09f6a9a8c8d9907e54d7" },
+]
+
+[[package]]
+name = "decorator"
+version = "5.2.1"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/decorator/decorator-5.2.1.tar.gz", hash = "sha256:65f266143752f734b0a7cc83c46f4618af75b8c5911b00ccb61d0ac9b6da0360" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/decorator/decorator-5.2.1-py3-none-any.whl", hash = "sha256:d316bb415a2d9e2d2b3abcc4084c6502fc09240e292cd76a76afc106a1c8e04a" },
+]
+
+[[package]]
 name = "deepdiff"
 version = "8.6.1"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
@@ -591,6 +648,15 @@ source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/
 sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/docstring-parser/docstring_parser-0.17.0.tar.gz", hash = "sha256:583de4a309722b3315439bb31d64ba3eebada841f2e2cee23b99df001434c912" }
 wheels = [
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/docstring-parser/docstring_parser-0.17.0-py3-none-any.whl", hash = "sha256:cf2569abd23dce8099b300f9b4fa8191e9582dda731fd533daf54c4551658708" },
+]
+
+[[package]]
+name = "executing"
+version = "2.2.1"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/executing/executing-2.2.1.tar.gz", hash = "sha256:3632cc370565f6648cc328b32435bd120a1e4ebb20c77e3fdde9a13cd1e533c4" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/executing/executing-2.2.1-py2.py3-none-any.whl", hash = "sha256:760643d3452b4d777d295bb167ccc74c64a81df23fb5e08eff250c425a4b2017" },
 ]
 
 [[package]]
@@ -1076,6 +1142,63 @@ wheels = [
 ]
 
 [[package]]
+name = "ipykernel"
+version = "7.2.0"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+dependencies = [
+    { name = "appnope", marker = "sys_platform == 'darwin'" },
+    { name = "comm" },
+    { name = "debugpy" },
+    { name = "ipython" },
+    { name = "jupyter-client" },
+    { name = "jupyter-core" },
+    { name = "matplotlib-inline" },
+    { name = "nest-asyncio" },
+    { name = "packaging" },
+    { name = "psutil" },
+    { name = "pyzmq" },
+    { name = "tornado" },
+    { name = "traitlets" },
+]
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/ipykernel/ipykernel-7.2.0.tar.gz", hash = "sha256:18ed160b6dee2cbb16e5f3575858bc19d8f1fe6046a9a680c708494ce31d909e" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/ipykernel/ipykernel-7.2.0-py3-none-any.whl", hash = "sha256:3bbd4420d2b3cc105cbdf3756bfc04500b1e52f090a90716851f3916c62e1661" },
+]
+
+[[package]]
+name = "ipython"
+version = "9.11.0"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+    { name = "decorator" },
+    { name = "ipython-pygments-lexers" },
+    { name = "jedi" },
+    { name = "matplotlib-inline" },
+    { name = "pexpect", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
+    { name = "prompt-toolkit" },
+    { name = "pygments" },
+    { name = "stack-data" },
+    { name = "traitlets" },
+]
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/ipython/ipython-9.11.0.tar.gz", hash = "sha256:2a94bc4406b22ecc7e4cb95b98450f3ea493a76bec8896cda11b78d7752a6667" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/ipython/ipython-9.11.0-py3-none-any.whl", hash = "sha256:6922d5bcf944c6e525a76a0a304451b60a2b6f875e86656d8bc2dfda5d710e19" },
+]
+
+[[package]]
+name = "ipython-pygments-lexers"
+version = "1.1.1"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+dependencies = [
+    { name = "pygments" },
+]
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/ipython-pygments-lexers/ipython_pygments_lexers-1.1.1.tar.gz", hash = "sha256:09c0138009e56b6854f9535736f4171d855c8c08a563a0dcd8022f78355c7e81" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/ipython-pygments-lexers/ipython_pygments_lexers-1.1.1-py3-none-any.whl", hash = "sha256:a9462224a505ade19a605f71f8fa63c2048833ce50abc86768a0d81d876dc81c" },
+]
+
+[[package]]
 name = "isodate"
 version = "0.6.1"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
@@ -1085,6 +1208,18 @@ dependencies = [
 sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/isodate/isodate-0.6.1.tar.gz", hash = "sha256:48c5881de7e8b0a0d648cb024c8062dc84e7b840ed81e864c7614fd3c127bde9" }
 wheels = [
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/isodate/isodate-0.6.1-py2.py3-none-any.whl", hash = "sha256:0751eece944162659049d35f4f549ed815792b38793f07cf73381c1c87cbed96" },
+]
+
+[[package]]
+name = "jedi"
+version = "0.19.2"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+dependencies = [
+    { name = "parso" },
+]
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/jedi/jedi-0.19.2.tar.gz", hash = "sha256:4770dc3de41bde3966b02eb84fbcf557fb33cce26ad23da12c742fb50ecb11f0" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/jedi/jedi-0.19.2-py2.py3-none-any.whl", hash = "sha256:a8ef22bde8490f57fe5c7681a3c83cb58874daf72b4784de3cce5b6ef6edb5b9" },
 ]
 
 [[package]]
@@ -1124,6 +1259,22 @@ dependencies = [
 sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/jsonschema-specifications/jsonschema_specifications-2025.9.1.tar.gz", hash = "sha256:b540987f239e745613c7a9176f3edb72b832a4ac465cf02712288397832b5e8d" }
 wheels = [
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/jsonschema-specifications/jsonschema_specifications-2025.9.1-py3-none-any.whl", hash = "sha256:98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe" },
+]
+
+[[package]]
+name = "jupyter-client"
+version = "8.8.0"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+dependencies = [
+    { name = "jupyter-core" },
+    { name = "python-dateutil" },
+    { name = "pyzmq" },
+    { name = "tornado" },
+    { name = "traitlets" },
+]
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/jupyter-client/jupyter_client-8.8.0.tar.gz", hash = "sha256:d556811419a4f2d96c869af34e854e3f059b7cc2d6d01a9cd9c85c267691be3e" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/jupyter-client/jupyter_client-8.8.0-py3-none-any.whl", hash = "sha256:f93a5b99c5e23a507b773d3a1136bd6e16c67883ccdbd9a829b0bbdb98cd7d7a" },
 ]
 
 [[package]]
@@ -1226,6 +1377,18 @@ wheels = [
 [package.optional-dependencies]
 msgpack = [
     { name = "msgpack" },
+]
+
+[[package]]
+name = "matplotlib-inline"
+version = "0.2.1"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+dependencies = [
+    { name = "traitlets" },
+]
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/matplotlib-inline/matplotlib_inline-0.2.1.tar.gz", hash = "sha256:e1ee949c340d771fc39e241ea75683deb94762c8fa5f2927ec57c83c4dffa9fe" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/matplotlib-inline/matplotlib_inline-0.2.1-py3-none-any.whl", hash = "sha256:d56ce5156ba6085e00a9d54fead6ed29a9c47e215cd1bba2e976ef39f5710a76" },
 ]
 
 [[package]]
@@ -1396,6 +1559,15 @@ wheels = [
 ]
 
 [[package]]
+name = "nest-asyncio"
+version = "1.6.0"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/nest-asyncio/nest_asyncio-1.6.0.tar.gz", hash = "sha256:6f172d5449aca15afd6c646851f4e31e02c598d553a667e38cafa997cfec55fe" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/nest-asyncio/nest_asyncio-1.6.0-py3-none-any.whl", hash = "sha256:87af6efd6b5e897c81050477ef65c62e2b2f35d51703cae01aff2905b1852e1c" },
+]
+
+[[package]]
 name = "networkx"
 version = "3.5"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
@@ -1415,65 +1587,63 @@ wheels = [
 
 [[package]]
 name = "numpy"
-version = "2.3.4"
+version = "2.4.3"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
-sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4.tar.gz", hash = "sha256:a7d018bfedb375a8d979ac758b120ba846a7fe764911a64465fd87b8729f4a6a" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3.tar.gz", hash = "sha256:483a201202b73495f00dbc83796c6ae63137a9bdade074f7648b3e32613412dd" }
 wheels = [
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:ef1b5a3e808bc40827b5fa2c8196151a4c5abe110e1726949d7abddfe5c7ae11" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:c2f91f496a87235c6aaf6d3f3d89b17dba64996abadccb289f48456cff931ca9" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp312-cp312-macosx_14_0_arm64.whl", hash = "sha256:f77e5b3d3da652b474cc80a14084927a5e86a5eccf54ca8ca5cbd697bf7f2667" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp312-cp312-macosx_14_0_x86_64.whl", hash = "sha256:8ab1c5f5ee40d6e01cbe96de5863e39b215a4d24e7d007cad56c7184fdf4aeef" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:77b84453f3adcb994ddbd0d1c5d11db2d6bda1a2b7fd5ac5bd4649d6f5dc682e" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:4121c5beb58a7f9e6dfdee612cb24f4df5cd4db6e8261d7f4d7450a997a65d6a" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:65611ecbb00ac9846efe04db15cbe6186f562f6bb7e5e05f077e53a599225d16" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:dabc42f9c6577bcc13001b8810d300fe814b4cfbe8a92c873f269484594f9786" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp312-cp312-win32.whl", hash = "sha256:a49d797192a8d950ca59ee2d0337a4d804f713bb5c3c50e8db26d49666e351dc" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp312-cp312-win_amd64.whl", hash = "sha256:985f1e46358f06c2a09921e8921e2c98168ed4ae12ccd6e5e87a4f1857923f32" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp312-cp312-win_arm64.whl", hash = "sha256:4635239814149e06e2cb9db3dd584b2fa64316c96f10656983b8026a82e6e4db" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:c090d4860032b857d94144d1a9976b8e36709e40386db289aaf6672de2a81966" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:a13fc473b6db0be619e45f11f9e81260f7302f8d180c49a22b6e6120022596b3" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313-macosx_14_0_arm64.whl", hash = "sha256:3634093d0b428e6c32c3a69b78e554f0cd20ee420dcad5a9f3b2a63762ce4197" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313-macosx_14_0_x86_64.whl", hash = "sha256:043885b4f7e6e232d7df4f51ffdef8c36320ee9d5f227b380ea636722c7ed12e" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:4ee6a571d1e4f0ea6d5f22d6e5fbd6ed1dc2b18542848e1e7301bd190500c9d7" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:fc8a63918b04b8571789688b2780ab2b4a33ab44bfe8ccea36d3eba51228c953" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:40cc556d5abbc54aabe2b1ae287042d7bdb80c08edede19f0c0afb36ae586f37" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:ecb63014bb7f4ce653f8be7f1df8cbc6093a5a2811211770f6606cc92b5a78fd" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313-win32.whl", hash = "sha256:e8370eb6925bb8c1c4264fec52b0384b44f675f191df91cbe0140ec9f0955646" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313-win_amd64.whl", hash = "sha256:56209416e81a7893036eea03abcb91c130643eb14233b2515c90dcac963fe99d" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313-win_arm64.whl", hash = "sha256:a700a4031bc0fd6936e78a752eefb79092cecad2599ea9c8039c548bc097f9bc" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313t-macosx_10_13_x86_64.whl", hash = "sha256:86966db35c4040fdca64f0816a1c1dd8dbd027d90fca5a57e00e1ca4cd41b879" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:838f045478638b26c375ee96ea89464d38428c69170360b23a1a50fa4baa3562" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313t-macosx_14_0_arm64.whl", hash = "sha256:d7315ed1dab0286adca467377c8381cd748f3dc92235f22a7dfc42745644a96a" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313t-macosx_14_0_x86_64.whl", hash = "sha256:84f01a4d18b2cc4ade1814a08e5f3c907b079c847051d720fad15ce37aa930b6" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313t-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:817e719a868f0dacde4abdfc5c1910b301877970195db9ab6a5e2c4bd5b121f7" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:85e071da78d92a214212cacea81c6da557cab307f2c34b5f85b628e94803f9c0" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313t-musllinux_1_2_aarch64.whl", hash = "sha256:2ec646892819370cf3558f518797f16597b4e4669894a2ba712caccc9da53f1f" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:035796aaaddfe2f9664b9a9372f089cfc88bd795a67bd1bfe15e6e770934cf64" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313t-win32.whl", hash = "sha256:fea80f4f4cf83b54c3a051f2f727870ee51e22f0248d3114b8e755d160b38cfb" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313t-win_amd64.whl", hash = "sha256:15eea9f306b98e0be91eb344a94c0e630689ef302e10c2ce5f7e11905c704f9c" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp313-cp313t-win_arm64.whl", hash = "sha256:b6c231c9c2fadbae4011ca5e7e83e12dc4a5072f1a1d85a0a7b3ed754d145a40" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314-macosx_10_15_x86_64.whl", hash = "sha256:81c3e6d8c97295a7360d367f9f8553973651b76907988bb6066376bc2252f24e" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:7c26b0b2bf58009ed1f38a641f3db4be8d960a417ca96d14e5b06df1506d41ff" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314-macosx_14_0_arm64.whl", hash = "sha256:62b2198c438058a20b6704351b35a1d7db881812d8512d67a69c9de1f18ca05f" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314-macosx_14_0_x86_64.whl", hash = "sha256:9d729d60f8d53a7361707f4b68a9663c968882dd4f09e0d58c044c8bf5faee7b" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:bd0c630cf256b0a7fd9d0a11c9413b42fef5101219ce6ed5a09624f5a65392c7" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:d5e081bc082825f8b139f9e9fe42942cb4054524598aaeb177ff476cc76d09d2" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314-musllinux_1_2_aarch64.whl", hash = "sha256:15fb27364ed84114438fff8aaf998c9e19adbeba08c0b75409f8c452a8692c52" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314-musllinux_1_2_x86_64.whl", hash = "sha256:85d9fb2d8cd998c84d13a79a09cc0c1091648e848e4e6249b0ccd7f6b487fa26" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314-win32.whl", hash = "sha256:e73d63fd04e3a9d6bc187f5455d81abfad05660b212c8804bf3b407e984cd2bc" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314-win_amd64.whl", hash = "sha256:3da3491cee49cf16157e70f607c03a217ea6647b1cea4819c4f48e53d49139b9" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314-win_arm64.whl", hash = "sha256:6d9cd732068e8288dbe2717177320723ccec4fb064123f0caf9bbd90ab5be868" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314t-macosx_10_15_x86_64.whl", hash = "sha256:22758999b256b595cf0b1d102b133bb61866ba5ceecf15f759623b64c020c9ec" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314t-macosx_11_0_arm64.whl", hash = "sha256:9cb177bc55b010b19798dc5497d540dea67fd13a8d9e882b2dae71de0cf09eb3" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314t-macosx_14_0_arm64.whl", hash = "sha256:0f2bcc76f1e05e5ab58893407c63d90b2029908fa41f9f1cc51eecce936c3365" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314t-macosx_14_0_x86_64.whl", hash = "sha256:8dc20bde86802df2ed8397a08d793da0ad7a5fd4ea3ac85d757bf5dd4ad7c252" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314t-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:5e199c087e2aa71c8f9ce1cb7a8e10677dc12457e7cc1be4798632da37c3e86e" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:85597b2d25ddf655495e2363fe044b0ae999b75bc4d630dc0d886484b03a5eb0" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314t-musllinux_1_2_aarch64.whl", hash = "sha256:04a69abe45b49c5955923cf2c407843d1c85013b424ae8a560bba16c92fe44a0" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314t-musllinux_1_2_x86_64.whl", hash = "sha256:e1708fac43ef8b419c975926ce1eaf793b0c13b7356cfab6ab0dc34c0a02ac0f" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314t-win32.whl", hash = "sha256:863e3b5f4d9915aaf1b8ec79ae560ad21f0b8d5e3adc31e73126491bb86dee1d" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314t-win_amd64.whl", hash = "sha256:962064de37b9aef801d33bc579690f8bfe6c5e70e29b61783f60bcba838a14d6" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.3.4-cp314-cp314t-win_arm64.whl", hash = "sha256:8b5a9a39c45d852b62693d9b3f3e0fe052541f804296ff401a72a1b60edafb29" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:61b0cbabbb6126c8df63b9a3a0c4b1f44ebca5e12ff6997b80fcf267fb3150ef" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:7395e69ff32526710748f92cd8c9849b361830968ea3e24a676f272653e8983e" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp312-cp312-macosx_14_0_arm64.whl", hash = "sha256:abdce0f71dcb4a00e4e77f3faf05e4616ceccfe72ccaa07f47ee79cda3b7b0f4" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp312-cp312-macosx_14_0_x86_64.whl", hash = "sha256:48da3a4ee1336454b07497ff7ec83903efa5505792c4e6d9bf83d99dc07a1e18" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:32e3bef222ad6b052280311d1d60db8e259e4947052c3ae7dd6817451fc8a4c5" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:e7dd01a46700b1967487141a66ac1a3cf0dd8ebf1f08db37d46389401512ca97" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:76f0f283506c28b12bba319c0fab98217e9f9b54e6160e9c79e9f7348ba32e9c" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:737f630a337364665aba3b5a77e56a68cc42d350edd010c345d65a3efa3addcc" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp312-cp312-win32.whl", hash = "sha256:26952e18d82a1dbbc2f008d402021baa8d6fc8e84347a2072a25e08b46d698b9" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp312-cp312-win_amd64.whl", hash = "sha256:65f3c2455188f09678355f5cae1f959a06b778bc66d535da07bf2ef20cd319d5" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp312-cp312-win_arm64.whl", hash = "sha256:2abad5c7fef172b3377502bde47892439bae394a71bc329f31df0fd829b41a9e" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:b346845443716c8e542d54112966383b448f4a3ba5c66409771b8c0889485dd3" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:2629289168f4897a3c4e23dc98d6f1731f0fc0fe52fb9db19f974041e4cc12b9" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313-macosx_14_0_arm64.whl", hash = "sha256:bb2e3cf95854233799013779216c57e153c1ee67a0bf92138acca0e429aefaee" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313-macosx_14_0_x86_64.whl", hash = "sha256:7f3408ff897f8ab07a07fbe2823d7aee6ff644c097cc1f90382511fe982f647f" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:decb0eb8a53c3b009b0962378065589685d66b23467ef5dac16cbe818afde27f" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:d5f51900414fc9204a0e0da158ba2ac52b75656e7dce7e77fb9f84bfa343b4cc" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:6bd06731541f89cdc01b261ba2c9e037f1543df7472517836b78dfb15bd6e476" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:22654fe6be0e5206f553a9250762c653d3698e46686eee53b399ab90da59bd92" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313-win32.whl", hash = "sha256:d71e379452a2f670ccb689ec801b1218cd3983e253105d6e83780967e899d687" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313-win_amd64.whl", hash = "sha256:0a60e17a14d640f49146cb38e3f105f571318db7826d9b6fef7e4dce758faecd" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313-win_arm64.whl", hash = "sha256:c9619741e9da2059cd9c3f206110b97583c7152c1dc9f8aafd4beb450ac1c89d" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:7aa4e54f6469300ebca1d9eb80acd5253cdfa36f2c03d79a35883687da430875" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313t-macosx_14_0_arm64.whl", hash = "sha256:d1b90d840b25874cf5cd20c219af10bac3667db3876d9a495609273ebe679070" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313t-macosx_14_0_x86_64.whl", hash = "sha256:a749547700de0a20a6718293396ec237bb38218049cfce788e08fcb716e8cf73" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313t-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:94f3c4a151a2e529adf49c1d54f0f57ff8f9b233ee4d44af623a81553ab86368" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:22c31dc07025123aedf7f2db9e91783df13f1776dc52c6b22c620870dc0fab22" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313t-musllinux_1_2_aarch64.whl", hash = "sha256:148d59127ac95979d6f07e4d460f934ebdd6eed641db9c0db6c73026f2b2101a" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:a97cbf7e905c435865c2d939af3d93f99d18eaaa3cabe4256f4304fb51604349" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313t-win32.whl", hash = "sha256:be3b8487d725a77acccc9924f65fd8bce9af7fac8c9820df1049424a2115af6c" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313t-win_amd64.whl", hash = "sha256:1ec84fd7c8e652b0f4aaaf2e6e9cc8eaa9b1b80a537e06b2e3a2fb176eedcb26" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp313-cp313t-win_arm64.whl", hash = "sha256:120df8c0a81ebbf5b9020c91439fccd85f5e018a927a39f624845be194a2be02" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314-macosx_10_15_x86_64.whl", hash = "sha256:5884ce5c7acfae1e4e1b6fde43797d10aa506074d25b531b4f54bde33c0c31d4" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:297837823f5bc572c5f9379b0c9f3a3365f08492cbdc33bcc3af174372ebb168" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314-macosx_14_0_arm64.whl", hash = "sha256:a111698b4a3f8dcbe54c64a7708f049355abd603e619013c346553c1fd4ca90b" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314-macosx_14_0_x86_64.whl", hash = "sha256:4bd4741a6a676770e0e97fe9ab2e51de01183df3dcbcec591d26d331a40de950" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:54f29b877279d51e210e0c80709ee14ccbbad647810e8f3d375561c45ef613dd" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:679f2a834bae9020f81534671c56fd0cc76dd7e5182f57131478e23d0dc59e24" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314-musllinux_1_2_aarch64.whl", hash = "sha256:d84f0f881cb2225c2dfd7f78a10a5645d487a496c6668d6cc39f0f114164f3d0" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314-musllinux_1_2_x86_64.whl", hash = "sha256:d213c7e6e8d211888cc359bab7199670a00f5b82c0978b9d1c75baf1eddbeac0" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314-win32.whl", hash = "sha256:52077feedeff7c76ed7c9f1a0428558e50825347b7545bbb8523da2cd55c547a" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314-win_amd64.whl", hash = "sha256:0448e7f9caefb34b4b7dd2b77f21e8906e5d6f0365ad525f9f4f530b13df2afc" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314-win_arm64.whl", hash = "sha256:b44fd60341c4d9783039598efadd03617fa28d041fc37d22b62d08f2027fa0e7" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314t-macosx_11_0_arm64.whl", hash = "sha256:0a195f4216be9305a73c0e91c9b026a35f2161237cf1c6de9b681637772ea657" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314t-macosx_14_0_arm64.whl", hash = "sha256:cd32fbacb9fd1bf041bf8e89e4576b6f00b895f06d00914820ae06a616bdfef7" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314t-macosx_14_0_x86_64.whl", hash = "sha256:2e03c05abaee1f672e9d67bc858f300b5ccba1c21397211e8d77d98350972093" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314t-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:7d1ce23cce91fcea443320a9d0ece9b9305d4368875bab09538f7a5b4131938a" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:c59020932feb24ed49ffd03704fbab89f22aa9c0d4b180ff45542fe8918f5611" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314t-musllinux_1_2_aarch64.whl", hash = "sha256:9684823a78a6cd6ad7511fc5e25b07947d1d5b5e2812c93fe99d7d4195130720" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314t-musllinux_1_2_x86_64.whl", hash = "sha256:0200b25c687033316fb39f0ff4e3e690e8957a2c3c8d22499891ec58c37a3eb5" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314t-win32.whl", hash = "sha256:5e10da9e93247e554bb1d22f8edc51847ddd7dde52d85ce31024c1b4312bfba0" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314t-win_amd64.whl", hash = "sha256:45f003dbdffb997a03da2d1d0cb41fbd24a87507fb41605c0420a3db5bd4667b" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/numpy/numpy-2.4.3-cp314-cp314t-win_arm64.whl", hash = "sha256:4d382735cecd7bcf090172489a525cd7d4087bc331f7df9f60ddc9a296cf208e" },
 ]
 
 [[package]]
@@ -1582,12 +1752,33 @@ wheels = [
 ]
 
 [[package]]
+name = "parso"
+version = "0.8.6"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/parso/parso-0.8.6.tar.gz", hash = "sha256:2b9a0332696df97d454fa67b81618fd69c35a7b90327cbe6ba5c92d2c68a7bfd" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/parso/parso-0.8.6-py2.py3-none-any.whl", hash = "sha256:2c549f800b70a5c4952197248825584cb00f033b29c692671d3bf08bf380baff" },
+]
+
+[[package]]
 name = "pathspec"
 version = "0.12.1"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
 sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pathspec/pathspec-0.12.1.tar.gz", hash = "sha256:a482d51503a1ab33b1c67a6c3813a26953dbdc71c31dacaef9a838c4e29f5712" }
 wheels = [
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pathspec/pathspec-0.12.1-py3-none-any.whl", hash = "sha256:a0d503e138a4c123b27490a4f7beda6a01c6f288df0e4a8b79c7eb0dc7b4cc08" },
+]
+
+[[package]]
+name = "pexpect"
+version = "4.9.0"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+dependencies = [
+    { name = "ptyprocess" },
+]
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pexpect/pexpect-4.9.0.tar.gz", hash = "sha256:ee7d41123f3c9911050ea2c2dac107568dc43b2d3b0c7557a33212c398ead30f" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pexpect/pexpect-4.9.0-py2.py3-none-any.whl", hash = "sha256:7236d1e080e4936be2dc3e326cec0af72acf9212a7e1d060210e70a47e253523" },
 ]
 
 [[package]]
@@ -1613,6 +1804,18 @@ dependencies = [
 sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pre-commit/pre_commit-4.5.1.tar.gz", hash = "sha256:eb545fcff725875197837263e977ea257a402056661f09dae08e4b149b030a61" }
 wheels = [
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pre-commit/pre_commit-4.5.1-py2.py3-none-any.whl", hash = "sha256:3b3afd891e97337708c1674210f8eba659b52a38ea5f822ff142d10786221f77" },
+]
+
+[[package]]
+name = "prompt-toolkit"
+version = "3.0.52"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+dependencies = [
+    { name = "wcwidth" },
+]
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/prompt-toolkit/prompt_toolkit-3.0.52.tar.gz", hash = "sha256:28cde192929c8e7321de85de1ddbe736f1375148b02f2e17edd840042b1be855" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/prompt-toolkit/prompt_toolkit-3.0.52-py3-none-any.whl", hash = "sha256:9aac639a3bbd33284347de5ad8d68ecc044b91a762dc39b7c21095fcd6a19955" },
 ]
 
 [[package]]
@@ -1724,6 +1927,52 @@ wheels = [
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/protobuf/protobuf-6.33.5-cp39-abi3-manylinux2014_s390x.whl", hash = "sha256:8afa18e1d6d20af15b417e728e9f60f3aa108ee76f23c3b2c07a2c3b546d3afd" },
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/protobuf/protobuf-6.33.5-cp39-abi3-manylinux2014_x86_64.whl", hash = "sha256:cbf16ba3350fb7b889fca858fb215967792dc125b35c7976ca4818bee3521cf0" },
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/protobuf/protobuf-6.33.5-py3-none-any.whl", hash = "sha256:69915a973dd0f60f31a08b8318b73eab2bd6a392c79184b3612226b0a3f8ec02" },
+]
+
+[[package]]
+name = "psutil"
+version = "7.2.2"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2.tar.gz", hash = "sha256:0746f5f8d406af344fd547f1c8daa5f5c33dbc293bb8d6a16d80b4bb88f59372" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp313-cp313t-macosx_10_13_x86_64.whl", hash = "sha256:2edccc433cbfa046b980b0df0171cd25bcaeb3a68fe9022db0979e7aa74a826b" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:e78c8603dcd9a04c7364f1a3e670cea95d51ee865e4efb3556a3a63adef958ea" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp313-cp313t-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:1a571f2330c966c62aeda00dd24620425d4b0cc86881c89861fbc04549e5dc63" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp313-cp313t-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:917e891983ca3c1887b4ef36447b1e0873e70c933afc831c6b6da078ba474312" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp313-cp313t-win_amd64.whl", hash = "sha256:ab486563df44c17f5173621c7b198955bd6b613fb87c71c161f827d3fb149a9b" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp313-cp313t-win_arm64.whl", hash = "sha256:ae0aefdd8796a7737eccea863f80f81e468a1e4cf14d926bd9b6f5f2d5f90ca9" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp314-cp314t-macosx_10_15_x86_64.whl", hash = "sha256:eed63d3b4d62449571547b60578c5b2c4bcccc5387148db46e0c2313dad0ee00" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp314-cp314t-macosx_11_0_arm64.whl", hash = "sha256:7b6d09433a10592ce39b13d7be5a54fbac1d1228ed29abc880fb23df7cb694c9" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp314-cp314t-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:1fa4ecf83bcdf6e6c8f4449aff98eefb5d0604bf88cb883d7da3d8d2d909546a" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp314-cp314t-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:e452c464a02e7dc7822a05d25db4cde564444a67e58539a00f929c51eddda0cf" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp314-cp314t-win_amd64.whl", hash = "sha256:c7663d4e37f13e884d13994247449e9f8f574bc4655d509c3b95e9ec9e2b9dc1" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp314-cp314t-win_arm64.whl", hash = "sha256:11fe5a4f613759764e79c65cf11ebdf26e33d6dd34336f8a337aa2996d71c841" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp36-abi3-macosx_10_9_x86_64.whl", hash = "sha256:ed0cace939114f62738d808fdcecd4c869222507e266e574799e9c0faa17d486" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp36-abi3-macosx_11_0_arm64.whl", hash = "sha256:1a7b04c10f32cc88ab39cbf606e117fd74721c831c98a27dc04578deb0c16979" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:076a2d2f923fd4821644f5ba89f059523da90dc9014e85f8e45a5774ca5bc6f9" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp36-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:b0726cecd84f9474419d67252add4ac0cd9811b04d61123054b9fb6f57df6e9e" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp36-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:fd04ef36b4a6d599bbdb225dd1d3f51e00105f6d48a28f006da7f9822f2606d8" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp36-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:b58fabe35e80b264a4e3bb23e6b96f9e45a3df7fb7eed419ac0e5947c61e47cc" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp37-abi3-win_amd64.whl", hash = "sha256:eb7e81434c8d223ec4a219b5fc1c47d0417b12be7ea866e24fb5ad6e84b3d988" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/psutil/psutil-7.2.2-cp37-abi3-win_arm64.whl", hash = "sha256:8c233660f575a5a89e6d4cb65d9f938126312bca76d8fe087b947b3a1aaac9ee" },
+]
+
+[[package]]
+name = "ptyprocess"
+version = "0.7.0"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/ptyprocess/ptyprocess-0.7.0.tar.gz", hash = "sha256:5c5d0a3b48ceee0b48485e0c26037c0acd7d29765ca3fbb5cb3831d347423220" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/ptyprocess/ptyprocess-0.7.0-py2.py3-none-any.whl", hash = "sha256:4b41f3967fce3af57cc7e94b888626c18bf37a083e3651ca8feeb66d492fef35" },
+]
+
+[[package]]
+name = "pure-eval"
+version = "0.2.3"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pure-eval/pure_eval-0.2.3.tar.gz", hash = "sha256:5f4e983f40564c576c7c8635ae88db5956bb2229d7e9237d03b3c0b0190eaf42" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pure-eval/pure_eval-0.2.3-py3-none-any.whl", hash = "sha256:1db8e35b67b3d218d818ae653e27f06c3aa420901fa7b081ca98cbedc874e0d0" },
 ]
 
 [[package]]
@@ -1896,6 +2145,15 @@ wheels = [
 ]
 
 [[package]]
+name = "pygments"
+version = "2.19.2"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pygments/pygments-2.19.2.tar.gz", hash = "sha256:636cb2477cec7f8952536970bc533bc43743542f70392ae026374600add5b887" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pygments/pygments-2.19.2-py3-none-any.whl", hash = "sha256:86540386c03d588bb81d44bc3928634ff26449851e99741617ecb9037ee5ec0b" },
+]
+
+[[package]]
 name = "python-dateutil"
 version = "2.9.0.post0"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
@@ -1981,6 +2239,49 @@ wheels = [
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyyaml/pyyaml-6.0.3-cp314-cp314t-musllinux_1_2_x86_64.whl", hash = "sha256:16249ee61e95f858e83976573de0f5b2893b3677ba71c9dd36b9cf8be9ac6d65" },
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyyaml/pyyaml-6.0.3-cp314-cp314t-win_amd64.whl", hash = "sha256:4ad1906908f2f5ae4e5a8ddfce73c320c2a1429ec52eafd27138b7f1cbe341c9" },
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyyaml/pyyaml-6.0.3-cp314-cp314t-win_arm64.whl", hash = "sha256:ebc55a14a21cb14062aa4162f906cd962b28e2e9ea38f9b4391244cd8de4ae0b" },
+]
+
+[[package]]
+name = "pyzmq"
+version = "27.1.0"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+dependencies = [
+    { name = "cffi", marker = "implementation_name == 'pypy'" },
+]
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0.tar.gz", hash = "sha256:ac0765e3d44455adb6ddbf4417dcce460fc40a05978c08efdf2948072f6db540" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp312-abi3-macosx_10_15_universal2.whl", hash = "sha256:452631b640340c928fa343801b0d07eb0c3789a5ffa843f6e1a9cee0ba4eb4fc" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp312-abi3-manylinux2014_i686.manylinux_2_17_i686.whl", hash = "sha256:1c179799b118e554b66da67d88ed66cd37a169f1f23b5d9f0a231b4e8d44a113" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp312-abi3-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:3837439b7f99e60312f0c926a6ad437b067356dc2bc2ec96eb395fd0fe804233" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp312-abi3-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:43ad9a73e3da1fab5b0e7e13402f0b2fb934ae1c876c51d0afff0e7c052eca31" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp312-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:0de3028d69d4cdc475bfe47a6128eb38d8bc0e8f4d69646adfbcd840facbac28" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp312-abi3-musllinux_1_2_i686.whl", hash = "sha256:cf44a7763aea9298c0aa7dbf859f87ed7012de8bda0f3977b6fb1d96745df856" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp312-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:f30f395a9e6fbca195400ce833c731e7b64c3919aa481af4d88c3759e0cb7496" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp312-abi3-win32.whl", hash = "sha256:250e5436a4ba13885494412b3da5d518cd0d3a278a1ae640e113c073a5f88edd" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp312-abi3-win_amd64.whl", hash = "sha256:9ce490cf1d2ca2ad84733aa1d69ce6855372cb5ce9223802450c9b2a7cba0ccf" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp312-abi3-win_arm64.whl", hash = "sha256:75a2f36223f0d535a0c919e23615fc85a1e23b71f40c7eb43d7b1dedb4d8f15f" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp313-cp313-android_24_arm64_v8a.whl", hash = "sha256:93ad4b0855a664229559e45c8d23797ceac03183c7b6f5b4428152a6b06684a5" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp313-cp313-android_24_x86_64.whl", hash = "sha256:fbb4f2400bfda24f12f009cba62ad5734148569ff4949b1b6ec3b519444342e6" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp313-cp313t-macosx_10_15_universal2.whl", hash = "sha256:e343d067f7b151cfe4eb3bb796a7752c9d369eed007b91231e817071d2c2fec7" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp313-cp313t-manylinux2014_i686.manylinux_2_17_i686.whl", hash = "sha256:08363b2011dec81c354d694bdecaef4770e0ae96b9afea70b3f47b973655cc05" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp313-cp313t-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:d54530c8c8b5b8ddb3318f481297441af102517602b569146185fa10b63f4fa9" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp313-cp313t-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:6f3afa12c392f0a44a2414056d730eebc33ec0926aae92b5ad5cf26ebb6cc128" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp313-cp313t-musllinux_1_2_aarch64.whl", hash = "sha256:c65047adafe573ff023b3187bb93faa583151627bc9c51fc4fb2c561ed689d39" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp313-cp313t-musllinux_1_2_i686.whl", hash = "sha256:90e6e9441c946a8b0a667356f7078d96411391a3b8f80980315455574177ec97" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:add071b2d25f84e8189aaf0882d39a285b42fa3853016ebab234a5e78c7a43db" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp313-cp313t-win32.whl", hash = "sha256:7ccc0700cfdf7bd487bea8d850ec38f204478681ea02a582a8da8171b7f90a1c" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp313-cp313t-win_amd64.whl", hash = "sha256:8085a9fba668216b9b4323be338ee5437a235fe275b9d1610e422ccc279733e2" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp313-cp313t-win_arm64.whl", hash = "sha256:6bb54ca21bcfe361e445256c15eedf083f153811c37be87e0514934d6913061e" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp314-cp314t-macosx_10_15_universal2.whl", hash = "sha256:ce980af330231615756acd5154f29813d553ea555485ae712c491cd483df6b7a" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp314-cp314t-manylinux2014_i686.manylinux_2_17_i686.whl", hash = "sha256:1779be8c549e54a1c38f805e56d2a2e5c009d26de10921d7d51cfd1c8d4632ea" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp314-cp314t-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:7200bb0f03345515df50d99d3db206a0a6bee1955fbb8c453c76f5bf0e08fb96" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp314-cp314t-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:01c0e07d558b06a60773744ea6251f769cd79a41a97d11b8bf4ab8f034b0424d" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp314-cp314t-musllinux_1_2_aarch64.whl", hash = "sha256:80d834abee71f65253c91540445d37c4c561e293ba6e741b992f20a105d69146" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp314-cp314t-musllinux_1_2_i686.whl", hash = "sha256:544b4e3b7198dde4a62b8ff6685e9802a9a1ebf47e77478a5eb88eca2a82f2fd" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp314-cp314t-musllinux_1_2_x86_64.whl", hash = "sha256:cedc4c68178e59a4046f97eca31b148ddcf51e88677de1ef4e78cf06c5376c9a" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp314-cp314t-win32.whl", hash = "sha256:1f0b2a577fd770aa6f053211a55d1c47901f4d537389a034c690291485e5fe92" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp314-cp314t-win_amd64.whl", hash = "sha256:19c9468ae0437f8074af379e986c5d3d7d7bfe033506af442e8c879732bedbe0" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp314-cp314t-win_arm64.whl", hash = "sha256:dc5dbf68a7857b59473f7df42650c621d7e8923fb03fa74a526890f4d33cc4d7" },
 ]
 
 [[package]]
@@ -2168,6 +2469,20 @@ wheels = [
 ]
 
 [[package]]
+name = "stack-data"
+version = "0.6.3"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+dependencies = [
+    { name = "asttokens" },
+    { name = "executing" },
+    { name = "pure-eval" },
+]
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/stack-data/stack_data-0.6.3.tar.gz", hash = "sha256:836a778de4fec4dcd1dcd89ed8abff8a221f58308462e1c4aa2a3cf30148f0b9" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/stack-data/stack_data-0.6.3-py3-none-any.whl", hash = "sha256:d5558e0c25a4cb0853cddad3d77da9891a08cb85dd9f9f91b9f8cd66e511e695" },
+]
+
+[[package]]
 name = "tenacity"
 version = "9.1.2"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
@@ -2183,6 +2498,23 @@ source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/
 sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/text-unidecode/text-unidecode-1.3.tar.gz", hash = "sha256:bad6603bb14d279193107714b288be206cac565dfa49aa5b105294dd5c4aab93" }
 wheels = [
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/text-unidecode/text_unidecode-1.3-py2.py3-none-any.whl", hash = "sha256:1311f10e8b895935241623731c2ba64f4c455287888b18189350b67134a822e8" },
+]
+
+[[package]]
+name = "tornado"
+version = "6.5.5"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/tornado/tornado-6.5.5.tar.gz", hash = "sha256:192b8f3ea91bd7f1f50c06955416ed76c6b72f96779b962f07f911b91e8d30e9" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/tornado/tornado-6.5.5-cp39-abi3-macosx_10_9_universal2.whl", hash = "sha256:487dc9cc380e29f58c7ab88f9e27cdeef04b2140862e5076a66fb6bb68bb1bfa" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/tornado/tornado-6.5.5-cp39-abi3-macosx_10_9_x86_64.whl", hash = "sha256:65a7f1d46d4bb41df1ac99f5fcb685fb25c7e61613742d5108b010975a9a6521" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/tornado/tornado-6.5.5-cp39-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl", hash = "sha256:e74c92e8e65086b338fd56333fb9a68b9f6f2fe7ad532645a290a464bcf46be5" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/tornado/tornado-6.5.5-cp39-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:435319e9e340276428bbdb4e7fa732c2d399386d1de5686cb331ec8eee754f07" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/tornado/tornado-6.5.5-cp39-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:3f54aa540bdbfee7b9eb268ead60e7d199de5021facd276819c193c0fb28ea4e" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/tornado/tornado-6.5.5-cp39-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:36abed1754faeb80fbd6e64db2758091e1320f6bba74a4cf8c09cd18ccce8aca" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/tornado/tornado-6.5.5-cp39-abi3-win32.whl", hash = "sha256:dd3eafaaeec1c7f2f8fdcd5f964e8907ad788fe8a5a32c4426fbbdda621223b7" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/tornado/tornado-6.5.5-cp39-abi3-win_amd64.whl", hash = "sha256:6443a794ba961a9f619b1ae926a2e900ac20c34483eea67be4ed8f1e58d3ef7b" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/tornado/tornado-6.5.5-cp39-abi3-win_arm64.whl", hash = "sha256:2c9a876e094109333f888539ddb2de4361743e5d21eece20688e3e351e4990a6" },
 ]
 
 [[package]]
@@ -2202,9 +2534,14 @@ dependencies = [
     { name = "dbt-bigquery" },
     { name = "dbt-core" },
     { name = "google-cloud-bigquery" },
+    { name = "numpy" },
+    { name = "pandas" },
 ]
 
 [package.dev-dependencies]
+dev = [
+    { name = "ipykernel" },
+]
 lint = [
     { name = "pre-commit" },
 ]
@@ -2214,9 +2551,12 @@ requires-dist = [
     { name = "dbt-bigquery", specifier = ">=1.11,<1.12" },
     { name = "dbt-core", specifier = ">=1.11,<1.12" },
     { name = "google-cloud-bigquery", specifier = ">=3.40,<4.0" },
+    { name = "numpy", specifier = "==2.4.3" },
+    { name = "pandas", specifier = ">=2.3.3" },
 ]
 
 [package.metadata.requires-dev]
+dev = [{ name = "ipykernel", specifier = ">=7.2.0" }]
 lint = [{ name = "pre-commit", specifier = ">=4.5.1" }]
 
 [[package]]
@@ -2270,6 +2610,15 @@ dependencies = [
 sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/virtualenv/virtualenv-20.36.1.tar.gz", hash = "sha256:8befb5c81842c641f8ee658481e42641c68b5eab3521d8e092d18320902466ba" }
 wheels = [
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/virtualenv/virtualenv-20.36.1-py3-none-any.whl", hash = "sha256:575a8d6b124ef88f6f51d56d656132389f961062a9177016a50e4f507bbcc19f" },
+]
+
+[[package]]
+name = "wcwidth"
+version = "0.6.0"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/wcwidth/wcwidth-0.6.0.tar.gz", hash = "sha256:cdc4e4262d6ef9a1a57e018384cbeb1208d8abbc64176027e2c2455c81313159" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/wcwidth/wcwidth-0.6.0-py3-none-any.whl", hash = "sha256:1a3a1e510b553315f8e146c54764f4fb6264ffad731b3d78088cdb1478ffbdad" },
 ]
 
 [[package]]
