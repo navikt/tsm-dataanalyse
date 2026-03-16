@@ -432,7 +432,7 @@ wheels = [
 
 [[package]]
 name = "dbt-adapters"
-version = "1.22.2"
+version = "1.22.8"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
 dependencies = [
     { name = "agate" },
@@ -443,14 +443,14 @@ dependencies = [
     { name = "pytz" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-adapters/dbt_adapters-1.22.2.tar.gz", hash = "sha256:05bb99c30bd7ca0153976595d46c59354302ab076051f004e92a841f117e71be" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-adapters/dbt_adapters-1.22.8.tar.gz", hash = "sha256:ee24fd42450f7518a9df350337769eae63626458f273f8d444b81944371f4976" }
 wheels = [
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-adapters/dbt_adapters-1.22.2-py3-none-any.whl", hash = "sha256:87767bdf33689c468bab2dc063930236c7d2cf2c69e07152d8e9df382cd75e1a" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-adapters/dbt_adapters-1.22.8-py3-none-any.whl", hash = "sha256:4962f5add2ff989e4d0275ebcb40bbd2c00c22b6c80a9bef8ce0ee9c284a893d" },
 ]
 
 [[package]]
 name = "dbt-bigquery"
-version = "1.11.0"
+version = "1.11.1"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
 dependencies = [
     { name = "dbt-adapters" },
@@ -464,9 +464,9 @@ dependencies = [
     { name = "google-cloud-storage" },
     { name = "nbformat" },
 ]
-sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-bigquery/dbt_bigquery-1.11.0.tar.gz", hash = "sha256:b1672b15a7c0828216f95fbbbc74875ad62f1d866d48a060b5f6a7efbab58785" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-bigquery/dbt_bigquery-1.11.1.tar.gz", hash = "sha256:e0a4b67b6670cf1a23d53cc6701d3d1192ab49ba72b0f4784b16330fdd9b3898" }
 wheels = [
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-bigquery/dbt_bigquery-1.11.0-py3-none-any.whl", hash = "sha256:465579336c74ceafdb8b95f7493ea11c10ec391cecf4b9109cea7efb557202f2" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-bigquery/dbt_bigquery-1.11.1-py3-none-any.whl", hash = "sha256:4f53155366b4bcf1a38bbf9247589e3e18812ed2468e56c14676c649782eae5d" },
 ]
 
 [[package]]
