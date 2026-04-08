@@ -9,7 +9,7 @@ dependencies = [
     "dbt-core>=1.11, <1.12",
     "google-cloud-bigquery>=3.40, <4.0",
     "matplotlib==3.10.8",
-    "numpy==2.4.3",
+    "numpy==2.4.4",
     "pandas>=2.3.3",
 ]
 
