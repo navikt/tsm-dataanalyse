@@ -6,10 +6,10 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "dbt-bigquery>=1.11, <1.12",
-    "dbt-core>=1.11, <1.12",
-    "google-cloud-bigquery>=3.40, <4.0",
+    "dbt-core>=1.11.8, <1.12",
+    "google-cloud-bigquery>=3.41.0, <4.0",
     "plotly>=6.7.0",
-    "polars>=1.39.3",
+    "polars>=1.41.1",
 ]
 
 [dependency-groups]
