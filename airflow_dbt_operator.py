@@ -7,6 +7,7 @@ def dbt_operator(*, dag: DAG, name: str, dbt_command: str, dbt_target: str, dbt_
         dag=dag,
         name=name,
         repo="navikt/tsm-dataanalyse",
+        branch="fix-running-dag-in-airflow",
         script_path="dbt/dbt_run_airflow.py",
         extra_envs={
             "dbt_command": dbt_command,
