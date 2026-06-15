@@ -2,12 +2,12 @@ from airflow import DAG
 from dataverk_airflow import python_operator
 
 
-def dbt_operator(*, dag: DAG, name: str, dbt_command: str, dbt_target: str, dbt_database: str, dbt_location: str, dbt_impersonate_sa: str, retries: int = 0):
+def dbt_operator(*, dag: DAG, name: str, dbt_command: str, dbt_target: str, dbt_database: str, dbt_location: str, dbt_impersonate_sa: str, retries: int = 1):
     return python_operator(
         dag=dag,
         name=name,
         repo="navikt/tsm-dataanalyse",
-        branch="fix-running-dag-in-airflow",
+        branch="main",
         script_path="dbt/dbt_run_airflow.py",
         extra_envs={
             "dbt_command": dbt_command,
