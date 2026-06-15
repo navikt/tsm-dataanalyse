@@ -13,7 +13,7 @@ def dbt_run_airflow(dbt_command) -> None:
     time.tzset()
 
     dbt = dbtRunner()
-    output: dbtRunnerResult = dbt.invoke(["--no-use-colors", "--log-format-file", "json", "--project-dir", "dbt", "--profiles-dir", "dbt"] + dbt_command)
+    output: dbtRunnerResult = dbt.invoke(["--no-use-colors", "--log-format-file", "json"] + dbt_command)
 
     if output.exception:
         raise output.exception
