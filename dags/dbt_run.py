@@ -13,7 +13,7 @@ with DAG(
     dbt_run_dev = dbt_operator(
         dag=dag,
         name="dbt_run_dev",
-        dbt_command="run --select staging",
+        dbt_command="run",
         dbt_target="dev",
         dbt_database=Variable.get("DBT_DATABASE_DEV"),
         dbt_location=Variable.get("DBT_LOCATION"),
