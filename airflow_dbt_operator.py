@@ -2,7 +2,7 @@ from airflow import DAG
 from dataverk_airflow import python_operator
 
 
-def dbt_operator(*, dag: DAG, name: str, dbt_command: str, dbt_target: str, dbt_database: str, dbt_location: str, dbt_impersonate_sa: str, retries: int = 1):
+def dbt_operator(*, dag: DAG, name: str, dbt_command: str, dbt_target: str, dbt_database: str, dbt_location: str, dbt_impersonate_sa: str, retries: int = 0):
     return python_operator(
         dag=dag,
         name=name,
