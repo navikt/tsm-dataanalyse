@@ -2,7 +2,7 @@ from airflow import DAG
 from dataverk_airflow import python_operator
 
 
-def dbt_operator(*, dag: DAG, name: str, dbt_command: str, dbt_target: str, dbt_database: str, dbt_location: str, retries: int = 1):
+def dbt_operator(*, dag: DAG, name: str, dbt_command: str, dbt_target: str, dbt_database: str, dbt_location: str, dbt_impersonate_sa: str, retries: int = 1):
     return python_operator(
         dag=dag,
         name=name,
@@ -20,6 +20,6 @@ def dbt_operator(*, dag: DAG, name: str, dbt_command: str, dbt_target: str, dbt_
         python_version="3.12",
         #allowlist=["bigquery.googleapis.com"],
         startup_timeout_seconds=600,
-        slack_channel="#teamsykmelding-fortellinger-alerts"
+        slack_channel="#teamsykmelding-fortellinger-alerts",
         retries=retries,
     )
