@@ -8,7 +8,7 @@ dependencies = [
     "dbt-bigquery>=1.11, <1.12",
     "dbt-core>=1.11.8, <1.12",
     "google-cloud-bigquery>=3.41.0, <4.0",
-    "plotly>=6.7.0",
+    "plotly>=6.8.0",
     "polars>=1.41.1",
 ]
 
