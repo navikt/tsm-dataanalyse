@@ -10,13 +10,13 @@ with DAG(
     schedule_interval=None,
     catchup=False
 ) as dag:
-    dbt_run_dev = dbt_operator(
+    dbt_run = dbt_operator(
         dag=dag,
-        name="dbt_run_dev",
+        name="dbt_run",
         dbt_command="run",
-        dbt_target="dev",
-        dbt_database=Variable.get("DBT_DATABASE_DEV"),
+        dbt_target=Variable.get("DBT_TARGET"),
+        dbt_database=Variable.get("DBT_DATABASE"),
         dbt_location=Variable.get("DBT_LOCATION"),
         dbt_impersonate_sa=Variable.get("DBT_IMPERSONATE_SA")
     )
-    dbt_run_dev
+    dbt_run
