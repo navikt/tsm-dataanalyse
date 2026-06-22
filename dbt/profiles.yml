@@ -8,7 +8,7 @@ tsm_dataanalyse:
       dataset: dbt
       impersonate_service_account: "{{ env_var('DBT_IMPERSONATE_SA') }}"
       threads: 1
-      location: "{{ env_var('DBT_LOCATION') }}"
+      location: europe-north1
     dev:
       type: bigquery
       method: oauth
@@ -16,4 +16,4 @@ tsm_dataanalyse:
       dataset: dbt
       impersonate_service_account: "{{ env_var('DBT_IMPERSONATE_SA') }}"
       threads: 1
-      location: "{{ env_var('DBT_LOCATION') }}"
+      location: europe-north1
