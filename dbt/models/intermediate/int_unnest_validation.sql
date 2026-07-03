@@ -7,7 +7,7 @@ WITH
   FROM
     {{ ref('stg_regulus_maximus__sykmeldinger')}}),
 
-  flattened AS (
+  validation_flat AS (
   SELECT
     id,
     last_status,
@@ -23,5 +23,5 @@ WITH
 SELECT
   *
 FROM
-  flattened
+  validation_flat
 ORDER BY id
