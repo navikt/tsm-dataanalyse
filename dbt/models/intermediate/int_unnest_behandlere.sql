@@ -12,8 +12,8 @@ behandler_flat as (
         id,
         JSON_VALUE(item, '$.id') as id_value,
         JSON_VALUE(item, '$.type') as id_type
-    from base,
-    unnest(behandler_ids) as item
+    from base
+    cross join unnest(behandler_ids) as item
 ),
 
 -- Pivot behandler JSON column
@@ -33,8 +33,8 @@ sykmelder_flat as (
         id,
         JSON_VALUE(item, '$.id') as id_value,
         JSON_VALUE(item, '$.type') as id_type
-    from base,
-    unnest(sykmelder_ids) as item
+    from base
+    cross join unnest(sykmelder_ids) as item
 ),
 
 -- Pivot sykmelder JSON column

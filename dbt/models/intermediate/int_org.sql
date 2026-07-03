@@ -13,8 +13,8 @@ sender_flat as (
         id,
         JSON_VALUE(item, '$.id') as id_value,
         JSON_VALUE(item, '$.type') as id_type
-    from base,
-    unnest(sender_ids) as item
+    from base
+    cross join unnest(sender_ids) as item
 ),
 
 -- Pivot behandler JSON column
