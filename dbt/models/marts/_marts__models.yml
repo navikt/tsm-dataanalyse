@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: marts_sykmelding
+    description: >
+      Entitetsmart med én rad per sykmelding. Perioder og valideringsregler
+      ligger nøstet som ARRAY<STRUCT>. 
+    columns:
+      - name: id
+        description: Unik identifikator for sykmeldingen.
+        data_tests:
+          - unique
+          - not_null
+
+  - name: marts_validation
+    description: >
+      Flat mart på regelnivå med én rad per sykmelding x valideringsregel.
+      Bærer sykmeldingskontekst (sm_type, mottattDato, aar, last_status).
+    columns:
+      - name: id
+        description: Identifikator for sykmeldingen regelen tilhører.
+        data_tests:
+          - not_null
+      - name: rule_name
+        description: Navnet på valideringsregelen.
+        data_tests:
+          - not_null
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - id
+            - rule_name

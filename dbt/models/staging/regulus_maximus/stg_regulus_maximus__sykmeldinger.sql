@@ -61,6 +61,7 @@ final as (
     format_timestamp('%Y-%m-%d %H:%M:%S UTC', generated_date, 'UTC') generated_timestamp,
     DATE(generated_date) generertDato,
     avsenderSystem_navn,
+    avsenderSystem_versjon,
     regelsettVersjon,
     helsepersonellKategori,
     DATE(tilbakedatering_kontaktDato) tilbakedatering_kontaktDato,
