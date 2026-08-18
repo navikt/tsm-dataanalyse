@@ -18,7 +18,7 @@ def dbt_operator(*, dag: DAG, name: str, dbt_command: str, dbt_target: str, dbt_
         use_uv_pip_install=True,
         requirements_path="requirements_airflow.txt",
         python_version="3.12",
-        #allowlist=["bigquery.googleapis.com"],
+        allowlist=["bigquery.googleapis.com"],
         startup_timeout_seconds=600,
         slack_channel="#team-symfoni-airflow-alerts",
         retries=retries,
