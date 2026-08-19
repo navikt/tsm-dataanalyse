@@ -1,2 +1,2 @@
-dbt-bigquery>=1.11, <1.12
+dbt-bigquery>=1.12, <1.13
 dbt-core==1.11.11
