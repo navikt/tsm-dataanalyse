@@ -1,1 +1,2 @@
-dbt-bigquery>=1.11.2, <1.12
+dbt-bigquery>=1.11, <1.12
+dbt-core-experimental-parser; sys_platform == "never"
