@@ -7,7 +7,7 @@ from airflow_dbt_operator import dbt_operator
 with DAG(
     dag_id="tsm_dataanalyse_dbt_run",
     start_date=datetime(2026, 6, 11),
-    schedule_interval=None,
+    schedule_interval="0 6 * * *",
     catchup=False
 ) as dag:
     dbt_run = dbt_operator(
