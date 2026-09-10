@@ -2,16 +2,19 @@ version = 1
 revision = 3
 requires-python = ">=3.12"
 resolution-markers = [
-    "python_full_version < '3.13' and sys_platform == 'win32'",
-    "python_full_version < '3.13' and sys_platform == 'emscripten'",
-    "python_full_version < '3.13' and sys_platform != 'emscripten' and sys_platform != 'win32'",
-    "python_full_version == '3.13.*' and sys_platform == 'win32'",
-    "python_full_version == '3.13.*' and sys_platform == 'emscripten'",
-    "python_full_version == '3.13.*' and sys_platform != 'emscripten' and sys_platform != 'win32'",
     "python_full_version >= '3.14' and sys_platform == 'win32'",
     "python_full_version >= '3.14' and sys_platform == 'emscripten'",
     "python_full_version >= '3.14' and sys_platform != 'emscripten' and sys_platform != 'win32'",
+    "python_full_version == '3.13.*' and sys_platform == 'win32'",
+    "python_full_version == '3.13.*' and sys_platform == 'emscripten'",
+    "python_full_version == '3.13.*' and sys_platform != 'emscripten' and sys_platform != 'win32'",
+    "python_full_version < '3.13' and sys_platform == 'win32'",
+    "python_full_version < '3.13' and sys_platform == 'emscripten'",
+    "python_full_version < '3.13' and sys_platform != 'emscripten' and sys_platform != 'win32'",
 ]
+
+[manifest]
+excludes = ["dbt-core-experimental-parser"]
 
 [[package]]
 name = "agate"
@@ -331,7 +334,7 @@ wheels = [
 
 [[package]]
 name = "dbt-adapters"
-version = "1.22.8"
+version = "1.24.5"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
 dependencies = [
     { name = "agate" },
@@ -342,14 +345,14 @@ dependencies = [
     { name = "pytz" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-adapters/dbt_adapters-1.22.8.tar.gz", hash = "sha256:ee24fd42450f7518a9df350337769eae63626458f273f8d444b81944371f4976" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-adapters/dbt_adapters-1.24.5.tar.gz", hash = "sha256:87de096a0d5b219905f1079b002f13e3447ffb63558f4f3c5b7278670d198acb" }
 wheels = [
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-adapters/dbt_adapters-1.22.8-py3-none-any.whl", hash = "sha256:4962f5add2ff989e4d0275ebcb40bbd2c00c22b6c80a9bef8ce0ee9c284a893d" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-adapters/dbt_adapters-1.24.5-py3-none-any.whl", hash = "sha256:32345118b921160722a13f12c3e369b9d59a0fb8fb9b3297e29d8cd53f973411" },
 ]
 
 [[package]]
 name = "dbt-bigquery"
-version = "1.11.3"
+version = "1.12.0"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
 dependencies = [
     { name = "dbt-adapters" },
@@ -364,14 +367,14 @@ dependencies = [
     { name = "google-cloud-storage" },
     { name = "nbformat" },
 ]
-sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-bigquery/dbt_bigquery-1.11.3.tar.gz", hash = "sha256:46fc7ff95f69b2747397eeb1432f3bee592012416df0144a22832d670e8198bc" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-bigquery/dbt_bigquery-1.12.0.tar.gz", hash = "sha256:088373ddd10af352457b484aa979ab2eecbecb13a7c1e3f5df41fd7d4e387800" }
 wheels = [
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-bigquery/dbt_bigquery-1.11.3-py3-none-any.whl", hash = "sha256:91631928c496b06abb34d82cc2f646cce8e3fafaba6694612ada7283efa93499" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-bigquery/dbt_bigquery-1.12.0-py3-none-any.whl", hash = "sha256:5fb87abffbd9a175a75cc85e4d1d21c5d63c3d9a7030b293901fa584f8315af4" },
 ]
 
 [[package]]
 name = "dbt-common"
-version = "1.37.3"
+version = "1.39.0"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
 dependencies = [
     { name = "agate" },
@@ -382,20 +385,21 @@ dependencies = [
     { name = "jinja2" },
     { name = "jsonschema" },
     { name = "mashumaro", extra = ["msgpack"] },
+    { name = "opentelemetry-api" },
     { name = "pathspec" },
     { name = "protobuf" },
     { name = "python-dateutil" },
     { name = "requests" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-common/dbt_common-1.37.3.tar.gz", hash = "sha256:f99304cf93f549c09d302eb61d9b280748bbe24e2245e214189ea08b41196ec3" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-common/dbt_common-1.39.0.tar.gz", hash = "sha256:868256ab2b59328efdd455644172ad17303f3f6a78a015f06667e865e068d620" }
 wheels = [
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-common/dbt_common-1.37.3-py3-none-any.whl", hash = "sha256:e11b81903107d9f254d0ec7ac14b2bcf6d531e46456cbc7881fdbfeb9bbd8eec" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-common/dbt_common-1.39.0-py3-none-any.whl", hash = "sha256:30d63490b9ef2aad6f469ec841fb758430fcb1d997b79ff3df36fcb7b79a241f" },
 ]
 
 [[package]]
 name = "dbt-core"
-version = "1.11.11"
+version = "1.12.3"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
 dependencies = [
     { name = "agate" },
@@ -405,15 +409,17 @@ dependencies = [
     { name = "dbt-common" },
     { name = "dbt-extractor" },
     { name = "dbt-protos" },
-    { name = "dbt-semantic-interfaces" },
     { name = "jinja2" },
     { name = "jsonschema" },
     { name = "mashumaro", extra = ["msgpack"] },
+    { name = "metricflow" },
     { name = "networkx" },
+    { name = "opentelemetry-api" },
     { name = "packaging" },
     { name = "pathspec" },
     { name = "protobuf" },
     { name = "pydantic" },
+    { name = "python-dotenv" },
     { name = "pytz" },
     { name = "pyyaml" },
     { name = "requests" },
@@ -421,9 +427,9 @@ dependencies = [
     { name = "sqlparse" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-core/dbt_core-1.11.11.tar.gz", hash = "sha256:e53cfccc8c9c13a082e518bf80cf3bb33c2f1fdc3cab48ec822ef93737eccb81" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-core/dbt_core-1.12.3.tar.gz", hash = "sha256:d608042c9ff034c0e11d06123a00b79cdf21b12068aac580e90e8326f1872c52" }
 wheels = [
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-core/dbt_core-1.11.11-py3-none-any.whl", hash = "sha256:7f9e11f3f5400e20f40f544440800ace23fa0755086f87b08e9446181f8720e1" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-core/dbt_core-1.12.3-py3-none-any.whl", hash = "sha256:3f4ea56be117ec579ae183389ef7107a3969e959ea9efc28f3499e46d089b753" },
 ]
 
 [[package]]
@@ -451,34 +457,14 @@ wheels = [
 
 [[package]]
 name = "dbt-protos"
-version = "1.0.410"
+version = "1.0.565"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
 dependencies = [
     { name = "protobuf" },
 ]
-sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-protos/dbt_protos-1.0.410.tar.gz", hash = "sha256:661dbc5fedd13bd48ef9cd7dd1c451fa2288dcae6202772f6e3a65f4e0dde427" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-protos/dbt_protos-1.0.565.tar.gz", hash = "sha256:fabee73a6f98a7eb7e52ab34571ef24d82cce760829e268c7263a5805f3937cf" }
 wheels = [
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-protos/dbt_protos-1.0.410-py3-none-any.whl", hash = "sha256:f04910d664506f0dd9052b58a25419da86cc1c5cb671ab0150b653959174757a" },
-]
-
-[[package]]
-name = "dbt-semantic-interfaces"
-version = "0.9.0"
-source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
-dependencies = [
-    { name = "click" },
-    { name = "importlib-metadata" },
-    { name = "jinja2" },
-    { name = "jsonschema" },
-    { name = "more-itertools" },
-    { name = "pydantic" },
-    { name = "python-dateutil" },
-    { name = "pyyaml" },
-    { name = "typing-extensions" },
-]
-sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-semantic-interfaces/dbt_semantic_interfaces-0.9.0.tar.gz", hash = "sha256:5c921257dce8bb51c9ffb5479f2bdd959e16ebfb98ee833de6daa70788c47271" }
-wheels = [
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-semantic-interfaces/dbt_semantic_interfaces-0.9.0-py3-none-any.whl", hash = "sha256:1b54c06ba89190a47a7f0563360930a0cce869e55b484ca09d261ade0e319155" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/dbt-protos/dbt_protos-1.0.565-py3-none-any.whl", hash = "sha256:130a8333fcd644ba1f00c8377e8f8013b28cca696a6af56037feb55a011f964c" },
 ]
 
 [[package]]
@@ -579,18 +565,19 @@ wheels = [
 
 [[package]]
 name = "google-api-core"
-version = "2.27.0"
+version = "2.36.0"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
 dependencies = [
     { name = "google-auth" },
     { name = "googleapis-common-protos" },
+    { name = "opentelemetry-api" },
     { name = "proto-plus" },
     { name = "protobuf" },
     { name = "requests" },
 ]
-sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/google-api-core/google_api_core-2.27.0.tar.gz", hash = "sha256:d32e2f5dd0517e91037169e75bf0a9783b255aff1d11730517c0b2b29e9db06a" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/google-api-core/google_api_core-2.36.0.tar.gz", hash = "sha256:32779307b52e64c9a9592a3621de6281676ecaeea299fe8524e4637ab7ac2531" }
 wheels = [
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/google-api-core/google_api_core-2.27.0-py3-none-any.whl", hash = "sha256:779a380db4e21a4ee3d717cf8efbf324e53900bf37e1ffb273e5348a9916dd42" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/google-api-core/google_api_core-2.36.0-py3-none-any.whl", hash = "sha256:e4d0b179260727ea5c42222426d9199285214dbef7bf48f8b16600c7f9a78944" },
 ]
 
 [package.optional-dependencies]
@@ -639,26 +626,26 @@ name = "google-cloud-aiplatform"
 version = "1.148.1"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
 resolution-markers = [
-    "python_full_version == '3.13.*' and sys_platform == 'win32'",
-    "python_full_version == '3.13.*' and sys_platform == 'emscripten'",
-    "python_full_version == '3.13.*' and sys_platform != 'emscripten' and sys_platform != 'win32'",
     "python_full_version >= '3.14' and sys_platform == 'win32'",
     "python_full_version >= '3.14' and sys_platform == 'emscripten'",
     "python_full_version >= '3.14' and sys_platform != 'emscripten' and sys_platform != 'win32'",
+    "python_full_version == '3.13.*' and sys_platform == 'win32'",
+    "python_full_version == '3.13.*' and sys_platform == 'emscripten'",
+    "python_full_version == '3.13.*' and sys_platform != 'emscripten' and sys_platform != 'win32'",
 ]
 dependencies = [
-    { name = "docstring-parser", marker = "python_full_version >= '3.13'" },
-    { name = "google-api-core", extra = ["grpc"], marker = "python_full_version >= '3.13'" },
-    { name = "google-auth", marker = "python_full_version >= '3.13'" },
-    { name = "google-cloud-bigquery", marker = "python_full_version >= '3.13'" },
-    { name = "google-cloud-resource-manager", marker = "python_full_version >= '3.13'" },
-    { name = "google-cloud-storage", marker = "python_full_version >= '3.13'" },
-    { name = "google-genai", marker = "python_full_version >= '3.13'" },
-    { name = "packaging", marker = "python_full_version >= '3.13'" },
-    { name = "proto-plus", marker = "python_full_version >= '3.13'" },
-    { name = "protobuf", marker = "python_full_version >= '3.13'" },
-    { name = "pydantic", marker = "python_full_version >= '3.13'" },
-    { name = "typing-extensions", marker = "python_full_version >= '3.13'" },
+    { name = "docstring-parser" },
+    { name = "google-api-core", extra = ["grpc"] },
+    { name = "google-auth" },
+    { name = "google-cloud-bigquery" },
+    { name = "google-cloud-resource-manager" },
+    { name = "google-cloud-storage" },
+    { name = "google-genai" },
+    { name = "packaging" },
+    { name = "proto-plus" },
+    { name = "protobuf" },
+    { name = "pydantic" },
+    { name = "typing-extensions" },
 ]
 sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/google-cloud-aiplatform/google_cloud_aiplatform-1.148.1.tar.gz", hash = "sha256:75d605fba34e68714bd08e1e482755d0a6e3ae972805f809d088e686c30879e7" }
 wheels = [
@@ -675,19 +662,19 @@ resolution-markers = [
     "python_full_version < '3.13' and sys_platform != 'emscripten' and sys_platform != 'win32'",
 ]
 dependencies = [
-    { name = "certifi", marker = "python_full_version < '3.13'" },
-    { name = "docstring-parser", marker = "python_full_version < '3.13'" },
-    { name = "google-api-core", extra = ["grpc"], marker = "python_full_version < '3.13'" },
-    { name = "google-auth", marker = "python_full_version < '3.13'" },
-    { name = "google-cloud-bigquery", marker = "python_full_version < '3.13'" },
-    { name = "google-cloud-resource-manager", marker = "python_full_version < '3.13'" },
-    { name = "google-cloud-storage", marker = "python_full_version < '3.13'" },
-    { name = "google-genai", marker = "python_full_version < '3.13'" },
-    { name = "packaging", marker = "python_full_version < '3.13'" },
-    { name = "proto-plus", marker = "python_full_version < '3.13'" },
-    { name = "protobuf", marker = "python_full_version < '3.13'" },
-    { name = "pydantic", marker = "python_full_version < '3.13'" },
-    { name = "typing-extensions", marker = "python_full_version < '3.13'" },
+    { name = "certifi" },
+    { name = "docstring-parser" },
+    { name = "google-api-core", extra = ["grpc"] },
+    { name = "google-auth" },
+    { name = "google-cloud-bigquery" },
+    { name = "google-cloud-resource-manager" },
+    { name = "google-cloud-storage" },
+    { name = "google-genai" },
+    { name = "packaging" },
+    { name = "proto-plus" },
+    { name = "protobuf" },
+    { name = "pydantic" },
+    { name = "typing-extensions" },
 ]
 sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/google-cloud-aiplatform/google_cloud_aiplatform-1.159.0.tar.gz", hash = "sha256:cfd0df4511d07385801e024d084ea47c0c5b0cf4af0d90dc48797b67ce49847a" }
 wheels = [
@@ -696,7 +683,7 @@ wheels = [
 
 [[package]]
 name = "google-cloud-bigquery"
-version = "3.42.1"
+version = "3.45.0"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
 dependencies = [
     { name = "google-api-core", extra = ["grpc"] },
@@ -707,9 +694,9 @@ dependencies = [
     { name = "python-dateutil" },
     { name = "requests" },
 ]
-sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/google-cloud-bigquery/google_cloud_bigquery-3.42.1.tar.gz", hash = "sha256:3c6878f424fc2b21f0bb414ca7262abd008465575a7b7c44c552105278a18914" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/google-cloud-bigquery/google_cloud_bigquery-3.45.0.tar.gz", hash = "sha256:5a799856825f47743ce561802cbd01b4d5c70062b36a942cfef5146017ecf0a4" }
 wheels = [
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/google-cloud-bigquery/google_cloud_bigquery-3.42.1-py3-none-any.whl", hash = "sha256:159143c1b7248858f35549c09efea5d031c2883145623419ea7c505a50c0899a" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/google-cloud-bigquery/google_cloud_bigquery-3.45.0-py3-none-any.whl", hash = "sha256:30637314d67526cbaefebfb9106c5a41c5f30a137ace404531148f09a6b487a6" },
 ]
 
 [package.optional-dependencies]
@@ -1243,6 +1230,29 @@ wheels = [
 ]
 
 [[package]]
+name = "metricflow"
+version = "0.212.0"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+dependencies = [
+    { name = "importlib-metadata" },
+    { name = "jinja2" },
+    { name = "jsonschema" },
+    { name = "more-itertools" },
+    { name = "pydantic" },
+    { name = "python-dateutil" },
+    { name = "pyyaml" },
+    { name = "rapidfuzz" },
+    { name = "referencing" },
+    { name = "sqlglot" },
+    { name = "tabulate" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/metricflow/metricflow-0.212.0.tar.gz", hash = "sha256:d85a4d2a37791e2215a5aad373bf50721191b223102ffe9318d8326b926eeadc" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/metricflow/metricflow-0.212.0-py3-none-any.whl", hash = "sha256:80bb3cfbd9d7c9190702f3b13b9de202cb723d3ff583f1116aeff07eeaed9e1d" },
+]
+
+[[package]]
 name = "more-itertools"
 version = "10.8.0"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
@@ -1417,6 +1427,18 @@ wheels = [
 ]
 
 [[package]]
+name = "opentelemetry-api"
+version = "1.44.0"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+dependencies = [
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/opentelemetry-api/opentelemetry_api-1.44.0.tar.gz", hash = "sha256:67647e5e9566edcf421166fdf022b3537f818635daa852b289e34604dc6fb33a" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/opentelemetry-api/opentelemetry_api-1.44.0-py3-none-any.whl", hash = "sha256:94b98c893a91b88657eaac1e3ba89618cdb85be6918196705354f34728b2cdef" },
+]
+
+[[package]]
 name = "orderly-set"
 version = "5.5.0"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
@@ -1540,7 +1562,7 @@ name = "pexpect"
 version = "4.9.0"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
 dependencies = [
-    { name = "ptyprocess", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
+    { name = "ptyprocess" },
 ]
 sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pexpect/pexpect-4.9.0.tar.gz", hash = "sha256:ee7d41123f3c9911050ea2c2dac107568dc43b2d3b0c7557a33212c398ead30f" }
 wheels = [
@@ -1558,48 +1580,48 @@ wheels = [
 
 [[package]]
 name = "plotly"
-version = "6.8.0"
+version = "7.0.0"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
 dependencies = [
     { name = "narwhals" },
     { name = "packaging" },
 ]
-sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/plotly/plotly-6.8.0.tar.gz", hash = "sha256:e088e7ddc68d4f70e3d66659224727a45296d71d2b8284181862d3d8f1f0d88f" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/plotly/plotly-7.0.0.tar.gz", hash = "sha256:08b21f1244a97e7a1a699833c4bb2678475aa108b3f1989886ed0b038ebfd849" }
 wheels = [
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/plotly/plotly-6.8.0-py3-none-any.whl", hash = "sha256:13c5c4a0f70b74cab1913eda0de49b826df5931708eb6f9c3010040614700ec8" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/plotly/plotly-7.0.0-py3-none-any.whl", hash = "sha256:78cbf7bd06d1b05bb3b8ec1b709864695229b55151b6f7530fbf55517ead6fdd" },
 ]
 
 [[package]]
 name = "polars"
-version = "1.42.0"
+version = "1.44.1"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
 dependencies = [
     { name = "polars-runtime-32" },
 ]
-sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars/polars-1.42.0.tar.gz", hash = "sha256:283ddc923e47857924fbef36580d2e98d984a47c962bae4cbce9c0ebcc98989c" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars/polars-1.44.1.tar.gz", hash = "sha256:ef3c89e9ebbbe8eb343c06873f1945683f8b6f97a1bdf001c60551c6c5e3cda1" }
 wheels = [
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars/polars-1.42.0-py3-none-any.whl", hash = "sha256:ab10cac3f2d28a6e22e22bcac69c0e51fb33cd25aee1f45105782d4fe55a3e6a" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars/polars-1.44.1-py3-none-any.whl", hash = "sha256:1fa62fc1c88fba77a68b28291b5aabdd69e5f38b34e59721a064ae3169b59bb5" },
 ]
 
 [[package]]
 name = "polars-runtime-32"
-version = "1.42.0"
+version = "1.44.1"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
-sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.42.0.tar.gz", hash = "sha256:c927e1930881fe0bf9629d12e5d44ebd4ecef2bfa02374dfc79feaa24054394f" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.44.1.tar.gz", hash = "sha256:abd10a54ed1caff42228610fcba0f93251f9870bd7cffb0c78bc26f5e0718ce4" }
 wheels = [
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.42.0-cp310-abi3-macosx_10_12_x86_64.whl", hash = "sha256:d235a5e8349797c16b70ad573fb9ddbd7f162796884bcbd25260908f8408affc" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.42.0-cp310-abi3-macosx_11_0_arm64.whl", hash = "sha256:e7923db3bcb57e0edecde3be28629e0411414a15ef1a4c10c783ac5eadab2e1e" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.42.0-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:42e27e2eb5909abcedb4ab4cc04ee67c5ec2b73a5640ebd8739b1b719383fa68" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.42.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:1a3c43d4a76360bf912f8772b5ac1c23d5a8efef71408c63bba1bb0b4897a8ea" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.42.0-cp310-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:542a77b2b969e5157939bfb76cd0f372c4f42db6ccd58636fcefe0011162a418" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.42.0-cp310-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:a13949abfce319de7fc4c1abee43bc9d4a4ed4d96bcc1a6037d022e4e9561d9f" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.42.0-cp310-abi3-win_amd64.whl", hash = "sha256:91a07bd852c1d1ea19b3e27c974bc7b1b29ac948fdb2e785da3a6ec0f0683cad" },
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.42.0-cp310-abi3-win_arm64.whl", hash = "sha256:b7c5d7721b7bb2563d72785050ac099da1e2000d412f9c72a0cfb7b07779e75d" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.44.1-cp310-abi3-macosx_10_12_x86_64.whl", hash = "sha256:1dfccb2b52aa50468a7d28e3e61c8338a13fb5bffc8646e388a649f5bdc6b463" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.44.1-cp310-abi3-macosx_11_0_arm64.whl", hash = "sha256:0580807dc3eed258f0db70bb65d905dd43f0135392119ec25308033ae24258fb" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.44.1-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:0627f9aa82cb869725235e5188f698862fd9ada0c8c1cf65c3dc5a49a4a0ec26" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.44.1-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:eea4283be8e60822d890dbda20588fe59b4172b508bd5ebf3471e531ca9f50d7" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.44.1-cp310-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:04e2c0f46e7a9906fffb1897f18f23b079b74f83c56b50060bace9e7b9b49b1a" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.44.1-cp310-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:0956f0cae632d8fad3a04b4315bf2bb69b56d10c83c79a75c2c4c5a13b9ce5cc" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.44.1-cp310-abi3-win_amd64.whl", hash = "sha256:159334184e6fbb074c9f4692221ea19970a5e2bed2a479f9d7bdb00b7f3eedb9" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/polars-runtime-32/polars_runtime_32-1.44.1-cp310-abi3-win_arm64.whl", hash = "sha256:3ba28d638d0513e0b4afbcdab5c0059a85021e5f81d62b5f793e7e23badb2cf7" },
 ]
 
 [[package]]
 name = "pre-commit"
-version = "4.6.0"
+version = "4.6.2"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
 dependencies = [
     { name = "cfgv" },
@@ -1608,9 +1630,9 @@ dependencies = [
     { name = "pyyaml" },
     { name = "virtualenv" },
 ]
-sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pre-commit/pre_commit-4.6.0.tar.gz", hash = "sha256:718d2208cef53fdc38206e40524a6d4d9576d103eb16f0fec11c875e7716e9d9" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pre-commit/pre_commit-4.6.2.tar.gz", hash = "sha256:8f5d7bfb021ecdbcd9d49d89847082dd24172ccde534390081a679ad046e2441" }
 wheels = [
-    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pre-commit/pre_commit-4.6.0-py2.py3-none-any.whl", hash = "sha256:e2cf246f7299edcabcf15f9b0571fdce06058527f0a06535068a86d38089f29b" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pre-commit/pre_commit-4.6.2-py2.py3-none-any.whl", hash = "sha256:e2dde9a75d3bce11bd3831c26d134df00a2803c1d818be6a0383c3dcda25dc4e" },
 ]
 
 [[package]]
@@ -1902,6 +1924,15 @@ wheels = [
 ]
 
 [[package]]
+name = "python-dotenv"
+version = "1.2.3"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/python-dotenv/python_dotenv-1.2.3.tar.gz", hash = "sha256:a20a594dabeaa385725aa239d5244871c143ecb356add8a20fcf23773a6c3a35" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/python-dotenv/python_dotenv-1.2.3-py3-none-any.whl", hash = "sha256:904552145e8bfed22162c09dab1c2b9b54fefa7b23ba780f4f26ca0316b0f0d9" },
+]
+
+[[package]]
 name = "python-slugify"
 version = "8.0.4"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
@@ -2018,6 +2049,96 @@ wheels = [
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp314-cp314t-win32.whl", hash = "sha256:1f0b2a577fd770aa6f053211a55d1c47901f4d537389a034c690291485e5fe92" },
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp314-cp314t-win_amd64.whl", hash = "sha256:19c9468ae0437f8074af379e986c5d3d7d7bfe033506af442e8c879732bedbe0" },
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/pyzmq/pyzmq-27.1.0-cp314-cp314t-win_arm64.whl", hash = "sha256:dc5dbf68a7857b59473f7df42650c621d7e8923fb03fa74a526890f4d33cc4d7" },
+]
+
+[[package]]
+name = "rapidfuzz"
+version = "3.14.6"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6.tar.gz", hash = "sha256:e13a8160d017b499ec7a2fa9d0ce1ae2e7377080815785819f966fb235d4eb60" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:b46cecf27025e7a934332ade033e6a394da8a493f19fa1d835e3b2968a4ff7da" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:1901414b135afb1a7f4b1ef940b95523b49cc5642aecf02af740f37567e98137" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:96a548979cd939b2c69358a0f5088a408524fbf7454f04bf90939fa971e64310" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp312-cp312-manylinux_2_26_ppc64le.manylinux_2_28_ppc64le.whl", hash = "sha256:b22ef7e5e2341efc6216b666491022027b984e5aef93446064742f43f3c1d926" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp312-cp312-manylinux_2_26_s390x.manylinux_2_28_s390x.whl", hash = "sha256:f0d2d95c787d812b9106cfbcb94ad37a49f59df9287e00a75eb61afc246e8759" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:0debb5f43662ea84d2f0228a0c7407ff647f9c3d13f3b692efff0cde46eebce0" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp312-cp312-manylinux_2_39_riscv64.whl", hash = "sha256:1d253e1fe44648242a0029b42ba23adf238ed2a7eb3d8ed0a03731a23f074ae0" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:e06c6050c9bf6cd72305e3e6a293918b2b92cf2a067007585a53898624902e3c" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp312-cp312-musllinux_1_2_ppc64le.whl", hash = "sha256:d85a6e9180e53cde95c95dfeb05a2ac94ead4d9d803a8fd186d2719a678b8483" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp312-cp312-musllinux_1_2_riscv64.whl", hash = "sha256:35db2670f69fa3a4eb4741055581477ff92f2cf39e7e06f43ebcb97c2192fe7c" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp312-cp312-musllinux_1_2_s390x.whl", hash = "sha256:f9d93e5424d1e4c103b57906b8beba270e680afda3ffdff7ea3bc6173b37083c" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:f9b0a501f37fb852c54469375baa25874246b3bbc8b6e21fb4cd186a32335868" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp312-cp312-win32.whl", hash = "sha256:9e974251a9833791bc557b46f975676a56c2d58946f795cd2964b095496dfdcc" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp312-cp312-win_amd64.whl", hash = "sha256:cfca36e4612208875e08611a779164b6cb8900ab8bbd3d82d4cfdfae9efbfac9" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp312-cp312-win_arm64.whl", hash = "sha256:96bbd5a1c67d135334d02fae74f1d933fdda204ea03d544a59dab6b1cbfbf565" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:55dc9a55924b4ecfcf4a60a701bcfae7d9daf0129c41dc16139270d75be0996c" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:bba0e9fad4dbea80227cde9cef3aaa984a934a84aec5f7505532e19838b14769" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp313-cp313-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:0b34b7ee4f4f760690d6477163aabbec05705b5dd764cb6c3a6ba95aa1fffc42" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp313-cp313-manylinux_2_26_ppc64le.manylinux_2_28_ppc64le.whl", hash = "sha256:abe92a70134c8b40790bb5c78b2a0a790686c26e83b6e99a456127ca141fe06a" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp313-cp313-manylinux_2_26_s390x.manylinux_2_28_s390x.whl", hash = "sha256:659b41570fcc6e02631ac361c47cc8db9ad26d740e4be2177df1b63005a49174" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:6bb896f89a387219c671ebc33c4a636b222010cc3c5c83884a7fc8707bf0bbf9" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp313-cp313-manylinux_2_39_riscv64.whl", hash = "sha256:11d76bb2b2cd038df708ae18f521fb3a50af477cc5a0dffce812da43a2f1beb3" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:28e9ce91bd41a8203185887ef9b1541a891aa61c5c1cb2e46f1689cd4288d372" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp313-cp313-musllinux_1_2_ppc64le.whl", hash = "sha256:864658e5a10d249a2277374e800f944fe990346d70eea6f3a51b712b6dd01984" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp313-cp313-musllinux_1_2_riscv64.whl", hash = "sha256:3c2444f5cd757ded2c3ba8b1734253b801b9b2ba9ecb3ee40cd505cebbfa7341" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp313-cp313-musllinux_1_2_s390x.whl", hash = "sha256:2cc9b5dde0ac89f7856f997ef917cac8e18e9dea473e9b3090a84bd600de6a91" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:faebff9b9a287fb673f9a66465a7e03043601c9bfe5e71c3f91b3f2e7b8a37f6" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp313-cp313-win32.whl", hash = "sha256:4406b2517b85febcf9419f8fbcdfbd534872ea32608050f9562224933ca49a4c" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp313-cp313-win_amd64.whl", hash = "sha256:c69fb0e064d10c79908dcda76d7ca8ecdf8393a39acbb74dbad3f709f2c60e95" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp313-cp313-win_arm64.whl", hash = "sha256:a0c8bef04f6b1d9fdbb319576350af53151a64692d477db7d4844c220bc8e212" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314-macosx_10_15_x86_64.whl", hash = "sha256:0f8d6718e7edacdb16455c0472e7552fd518decb91e91250c58784fd6163f54f" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:8fa7d45388dec34a86038f2a38380f4922b74b5dd8991247f629a531178db10f" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:760ee152af5e8b4d241a469f933ba2d7215248618ae19770fec7d80d9e149db6" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314-manylinux_2_26_ppc64le.manylinux_2_28_ppc64le.whl", hash = "sha256:dbe3378db3ae0453accf6196e2ed943f43d416cfacdcb8883db105bc14a0130f" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314-manylinux_2_26_s390x.manylinux_2_28_s390x.whl", hash = "sha256:9ddb0ddf3ee616fdc066add4ef05639c5cf59b58d83779b6023488e5435f6191" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:08bc63b88048376114d1e66cf8fa6926495d03bb873eb87854fa74cf6848a70b" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314-manylinux_2_39_riscv64.whl", hash = "sha256:50cd6718bcda7ec5293635a9d0b3fb5906251013d3b99ca403ba9dfa8965f661" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314-musllinux_1_2_aarch64.whl", hash = "sha256:63b0e84faec3c5706cae8ae51246ff103407d54efa32a615a548b7b67392ebcf" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314-musllinux_1_2_ppc64le.whl", hash = "sha256:9080a730fdcf3cb8a07464c90f9cf40c1b4ffc73a8375b56a8898aba619dda30" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314-musllinux_1_2_riscv64.whl", hash = "sha256:178557c7a50c8c8d65369ede7f3d845bf23590a951c9a368caf166b105d58cf3" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314-musllinux_1_2_s390x.whl", hash = "sha256:44f1cddbc2010700e2d88063d0ab64183efe2578d9b52770ce1cd283dda230c5" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314-musllinux_1_2_x86_64.whl", hash = "sha256:17081a0e904c12bb4ed49619a2bbb6528f6af00fe850e7ace22487bfd2aea455" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314-win32.whl", hash = "sha256:9e00c8c9500aacbc0c52b66369f54533ecbdcb92e5aa87e160fc8e293000a696" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314-win_amd64.whl", hash = "sha256:41ee893c4d7d0fb1844f6cad966540a833784b3bad2c239a0d80195d9231cef4" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314-win_arm64.whl", hash = "sha256:10576c39fe6a49fad0bf1069371a77300ce166a3f36d2900d2d0bae08f297104" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314t-macosx_10_15_x86_64.whl", hash = "sha256:1b0a9546a7328d3cfc2f1385501db7c4c374fb566dc1a3b22ad56092846c0134" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314t-macosx_11_0_arm64.whl", hash = "sha256:9989280902b9c4ecf7de95fbb906e94df0d8c047290ed315c7aa1760cec9b3de" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314t-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:fc166efa4ca2fc9cc52e43784a54cbea95fc0e03e533f8266ef66b1c04c7cb76" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314t-manylinux_2_26_ppc64le.manylinux_2_28_ppc64le.whl", hash = "sha256:32352a3ed1aad9c097d31fd4f2eece3030169e2de3dedde7a2fadc2652b768ad" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314t-manylinux_2_26_s390x.manylinux_2_28_s390x.whl", hash = "sha256:ecb45d616002751b58914d5b7c2e66acd39e12242be12717a1258148a1b36526" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:6f9ad513e3a3e045b60b421d5cd3887ae0a33b38fc6c6db3ea5e27c0a2e0412c" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314t-manylinux_2_39_riscv64.whl", hash = "sha256:f35723caef8cc31b6f34209708fb172fc88bab0077c12e9b36bbb829baaf1b16" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314t-musllinux_1_2_aarch64.whl", hash = "sha256:408b2e8e8c1ac71b57f0923cf964d6932539725e07b69e70ec66f22c4a403891" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314t-musllinux_1_2_ppc64le.whl", hash = "sha256:5667c56fdc902fa1e12449b5c042e8b1c7e9b30040db20c396fbdb3d0a750866" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314t-musllinux_1_2_riscv64.whl", hash = "sha256:76a122fc573df603deb5fb827df31bb5efbd0826b50bb7aeca8535a6e8c70cf9" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314t-musllinux_1_2_s390x.whl", hash = "sha256:e221366e24709b9d41d5f9cc99053b04cfc575d429e956a82cfbc4c4e9e8860a" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314t-musllinux_1_2_x86_64.whl", hash = "sha256:36710ff214b7a8049d26a9c81d99948026593cacb47663742c4119072b651ecd" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314t-win32.whl", hash = "sha256:66ece6f5e2586c742fc3e0b8487e06783d27c6c24adcdcfdd7f306afbd8b5737" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314t-win_amd64.whl", hash = "sha256:cab4a932cec02d09471e2c9f1434049ef5bfe1f6e646ff10939c222dc610ad60" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp314-cp314t-win_arm64.whl", hash = "sha256:b056ce19eaea2ea70c6a6fb387a605ca2af8979de5b9d507597e8012820ddb14" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315-macosx_10_15_x86_64.whl", hash = "sha256:bc3d74d18543ddfbc8babe1faadb19927a7999fd0d01181cce9e721c14c36ab6" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315-macosx_11_0_arm64.whl", hash = "sha256:aaa83b633d877a05d549d2073629134998d1b3b9dbc114873d3ff4277984979f" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:cbe6a62f71fcbca72acbf5a30e53380600369f257f951d664d81d30c0c598595" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:b82c21c30568e096ef2a9dda7d45c379e6141694e0472dac73bc4372ce13ccee" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315-manylinux_2_39_riscv64.whl", hash = "sha256:fc950bb77105a2717d03d9f9c9e21e9ace7df2b8e864dd91edef7e32fa143be2" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315-musllinux_1_2_aarch64.whl", hash = "sha256:c53a269bdbd71ffbc856d3db9e609478251001ee272507578fa838bc2bd421fe" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315-musllinux_1_2_riscv64.whl", hash = "sha256:bf4fb0f19c9dfce7a908c3e309753602ce3edb83bb74e9ff997e278765bf89df" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315-musllinux_1_2_x86_64.whl", hash = "sha256:189ce2bf14938bfa003fbbe7e6da7584ed6ebbc4c560686255dbc20e2829f470" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315-win32.whl", hash = "sha256:7ca0f498bf771a87557e6d8b573aa6cf3daded58ae2eaeb6973618ce3e1615ad" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315-win_amd64.whl", hash = "sha256:d4c5adb921b67dd79ffc0a14f92b9f8df3d012e66aab340b154ed87014229d93" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315-win_arm64.whl", hash = "sha256:c9d135fb93709d707577da8a7a8ffc7283525a5b6d0ce55aa3724be5639ed65b" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315t-macosx_10_15_x86_64.whl", hash = "sha256:dd89abd1c4b3776c3471a817216830bd275441c8344bbda5d51a3bffe1e0fbdf" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315t-macosx_11_0_arm64.whl", hash = "sha256:eab2d4680d7f438dbb1d484b187d59a943edea9c83f792c764a0c148a417a60a" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315t-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:8683fefdd3484d64a191b3efbc8cbe9162c3eac891fd62d0a1b70e117ffcd434" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:2bc7af3a699371a941aac86dc8a79ac92adeb3c2add2aab02230e76068a0029e" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315t-manylinux_2_39_riscv64.whl", hash = "sha256:40c2753e2d4dc96b25f8a25adc23ab0bb6cfd8bc8125a1753ac4b037d6ff6511" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315t-musllinux_1_2_aarch64.whl", hash = "sha256:36a37ddc729c33618d89fa221d3333b9b956dc38cf15d31301e6169d962399a3" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315t-musllinux_1_2_riscv64.whl", hash = "sha256:635f242f4bdf05d1477fa409815bd73e5f78896773ace84997bc472ffeef685f" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315t-musllinux_1_2_x86_64.whl", hash = "sha256:40d0cd9c82083aeb30bae8dee265ae571e6748d0d7b222ddd777f33d95a3b712" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315t-win32.whl", hash = "sha256:15da2b258908eb38853c1a6a58a1d09d9aad9c721e03a68c8ba691cd31dff739" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315t-win_amd64.whl", hash = "sha256:3d502769263318690d4f6638b08483979d1b88cdc7c6f087482eea935fde4031" },
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/rapidfuzz/rapidfuzz-3.14.6-cp315-cp315t-win_arm64.whl", hash = "sha256:07c7aa0b1e4b9999a54f9e73317d6743ff85442c8ef7b7fbbe6b190fd37d9e75" },
 ]
 
 [[package]]
@@ -2196,6 +2317,15 @@ wheels = [
 ]
 
 [[package]]
+name = "sqlglot"
+version = "30.18.0"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/sqlglot/sqlglot-30.18.0.tar.gz", hash = "sha256:e57e1b205e341979d1df5b1212c1435c598a0437e4619e3f428b15d5bc3a5cc6" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/sqlglot/sqlglot-30.18.0-py3-none-any.whl", hash = "sha256:ee0f9a9f3e2193e763c326e52dfb377b96fdb4292f6305c3ff2d9a220e71c601" },
+]
+
+[[package]]
 name = "sqlparse"
 version = "0.5.5"
 source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
@@ -2216,6 +2346,15 @@ dependencies = [
 sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/stack-data/stack_data-0.6.3.tar.gz", hash = "sha256:836a778de4fec4dcd1dcd89ed8abff8a221f58308462e1c4aa2a3cf30148f0b9" }
 wheels = [
     { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/stack-data/stack_data-0.6.3-py3-none-any.whl", hash = "sha256:d5558e0c25a4cb0853cddad3d77da9891a08cb85dd9f9f91b9f8cd66e511e695" },
+]
+
+[[package]]
+name = "tabulate"
+version = "0.10.0"
+source = { registry = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/simple/" }
+sdist = { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/tabulate/tabulate-0.10.0.tar.gz", hash = "sha256:e2cfde8f79420f6deeffdeda9aaec3b6bc5abce947655d17ac662b126e48a60d" }
+wheels = [
+    { url = "https://europe-north1-python.pkg.dev/knada-gcp/pypiproxy/tabulate/tabulate-0.10.0-py3-none-any.whl", hash = "sha256:f0b0622e567335c8fabaaa659f1b33bcb6ddfe2e496071b743aa113f8774f2d3" },
 ]
 
 [[package]]
@@ -2284,16 +2423,16 @@ lint = [
 
 [package.metadata]
 requires-dist = [
-    { name = "dbt-bigquery", specifier = ">=1.11,<1.12" },
-    { name = "dbt-core", specifier = ">=1.11.8,<1.12" },
-    { name = "google-cloud-bigquery", specifier = ">=3.42.1,<4.0" },
-    { name = "plotly", specifier = ">=6.8.0" },
-    { name = "polars", specifier = ">=1.42.0" },
+    { name = "dbt-bigquery", specifier = ">=1.12,<1.13" },
+    { name = "dbt-core", specifier = "==1.12.3" },
+    { name = "google-cloud-bigquery", specifier = ">=3.45.0,<4.0" },
+    { name = "plotly", specifier = "==7.0.0" },
+    { name = "polars", specifier = "==1.44.1" },
 ]
 
 [package.metadata.requires-dev]
 dev = [{ name = "ipykernel", specifier = ">=7.3.0" }]
-lint = [{ name = "pre-commit", specifier = ">=4.6.0" }]
+lint = [{ name = "pre-commit", specifier = "==4.6.2" }]
 
 [[package]]
 name = "typing-extensions"
