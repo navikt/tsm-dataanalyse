@@ -71,6 +71,7 @@ final as (
     sender_ids,
     behandler_ids,
     sykmelder_ids,
+    hoveddiagnose_system,
 
     FROM src
 

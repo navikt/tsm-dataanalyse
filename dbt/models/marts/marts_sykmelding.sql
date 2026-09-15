@@ -17,7 +17,8 @@ WITH
             tilbakedatering_kontaktDato,
             tilbakedatering_begrunnelse,
             generertDato,
-            generated_timestamp
+            generated_timestamp,
+            hoveddiagnose_system
         FROM {{ ref('stg_regulus_maximus__sykmeldinger') }}
     ),
 
@@ -90,7 +91,7 @@ WITH
             sm.id,
             sm.fom,
             sm.tom,
-            sm.pasient_ident,
+            --sm.pasient_ident,
             sm.sm_type,
             sm.last_status,
             sm.avsenderSystem_navn,
@@ -104,6 +105,7 @@ WITH
             sm.tilbakedatering_begrunnelse,
             sm.generertDato,
             sm.generated_timestamp,
+            sm.hoveddiagnose_system,
             d.mottattDato,
             d.aar,
             d.mnd,
