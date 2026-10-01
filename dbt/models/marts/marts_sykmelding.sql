@@ -1,3 +1,5 @@
+{{ config(alias='marts_sykmelding_new') }}   -- use marts_validation_new in marts_validation.sql
+
 WITH
     sykmeldinger AS (
         SELECT
@@ -18,7 +20,6 @@ WITH
             hoveddiagnose_system,
             -- typespesifikke felter (NULL for typer som ikke har feltet)
             metadata_type,
-            arbeidsgiver_type,
             friskmelding_til_arbeidsformidling,
             utenlandsk_land,
             annen_fravarsgrunn,
@@ -110,7 +111,6 @@ WITH
             sm.generated_timestamp,
             sm.hoveddiagnose_system,
             sm.metadata_type,
-            sm.arbeidsgiver_type,
             sm.friskmelding_til_arbeidsformidling,
             sm.utenlandsk_land,
             sm.annen_fravarsgrunn,

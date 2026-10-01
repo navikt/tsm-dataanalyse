@@ -1,3 +1,4 @@
+{{ config(alias='marts_validation_new') }}
 WITH
     val AS (
         SELECT
