@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: int_sykmeldinger_unioned
+    description: >
+      Alle sykmeldingstyper slått sammen til én rad per sykmelding. Felter som ikke
+      finnes på en type er NULL. Testen assert_sykmeldinger_unioned_has_all_rows
+      sjekker at ingen rader forsvinner fra base.
+    columns:
+      - name: id
+        data_tests:
+          - unique
+          - not_null

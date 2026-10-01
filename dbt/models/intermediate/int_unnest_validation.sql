@@ -5,7 +5,7 @@ WITH
       last_status,
       rules_array
     FROM
-      {{ ref('stg_regulus_maximus__sykmeldinger')}}
+      {{ ref('int_sykmeldinger_unioned')}}
   ),
 
   validation_flat AS (

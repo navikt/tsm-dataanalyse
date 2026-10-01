@@ -3,7 +3,7 @@ with base as (
         id,
         behandler_ids,
         sykmelder_ids,
-    from {{ ref('stg_regulus_maximus__sykmeldinger')}}
+    from {{ ref('int_sykmeldinger_unioned')}}
 ),
 
 -- Flatten behandler JSON column
