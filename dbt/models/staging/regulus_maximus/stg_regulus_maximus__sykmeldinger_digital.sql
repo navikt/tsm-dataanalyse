@@ -29,7 +29,6 @@ final as (
 
     -- kun DIGITAL
     CAST(JSON_VALUE(sykmelding, '$.prognose.friskmeldingTilArbeidsformidling') AS BOOL) AS friskmelding_til_arbeidsformidling,
-    JSON_QUERY_ARRAY(sykmelding, '$.utdypendeSporsmal') AS utdypende_sporsmal,
 
     -- annenFravarsgrunn er én verdi her, men en liste i legacy (annenFraversArsak.arsak)
     IF(
