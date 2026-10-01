@@ -24,7 +24,7 @@ WITH
         SELECT
             id,
             sm_type
-        FROM {{ ref('stg_regulus_maximus__sykmeldinger') }}
+        FROM {{ ref('int_sykmeldinger_unioned') }}
     ),
 
     final AS (

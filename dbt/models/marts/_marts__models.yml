@@ -4,13 +4,24 @@ models:
   - name: marts_sykmelding
     description: >
       Entitetsmart med én rad per sykmelding. Perioder og valideringsregler
-      ligger nøstet som ARRAY<STRUCT>. 
+      ligger nøstet som ARRAY<STRUCT>.
+      Typespesifikke felter er NULL for typer som ikke har feltet.
     columns:
       - name: id
         description: Unik identifikator for sykmeldingen.
         data_tests:
           - unique
           - not_null
+      - name: prognose_arbeid
+        description: prognose.arbeid.type (ER_I_ARBEID / ER_IKKE_I_ARBEID). Kun XML og PAPIR.
+      - name: metadata_type
+        description: Meldingstype fra metadata (DIGITAL, EMOTTAK, ENKEL, EGENMELDT, PAPIRSYKMELDING, UTENLANDSK_SYKMELDING).
+      - name: friskmelding_til_arbeidsformidling
+        description: prognose.friskmeldingTilArbeidsformidling. Kun DIGITAL.
+      - name: annen_fravarsgrunn
+        description: ARRAY<STRING> med AnnenFravarArsakType. Alle typer.
+      - name: utenlandsk_land
+        description: utenlandskInfo.land. Kun UTENLANDSK.
 
   - name: marts_validation
     description: >
@@ -26,7 +37,5 @@ models:
         data_tests:
           - not_null
     data_tests:
-      - dbt_utils.unique_combination_of_columns:
-          combination_of_columns:
-            - id
-            - rule_name
+      - unique:
+          column_name: "concat(id, '|', rule_name)"
