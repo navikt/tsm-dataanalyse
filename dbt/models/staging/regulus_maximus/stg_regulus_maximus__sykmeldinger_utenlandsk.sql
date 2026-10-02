@@ -13,7 +13,6 @@ final as (
   SELECT
     * EXCEPT (sykmelding, metadata),
 
-    -- felles for XML, PAPIR, UTENLANDSK
     JSON_VALUE_ARRAY(sykmelding, '$.medisinskVurdering.annenFraversArsak.arsak') AS annen_fravarsgrunn,
 
     -- kun UTENLANDSK
