@@ -30,13 +30,13 @@ final as (
     -- kun DIGITAL
     CAST(JSON_VALUE(sykmelding, '$.prognose.friskmeldingTilArbeidsformidling') AS BOOL) AS friskmelding_til_arbeidsformidling,
 
-    -- annenFravarsgrunn er én verdi her, men en liste i legacy (annenFraversArsak.arsak)
+    -- annenFravarsgrunn er én verdi her, men en liste i XML, papir og utenlandsk (annenFraversArsak.arsak)
     IF(
       JSON_VALUE(sykmelding, '$.medisinskVurdering.annenFravarsgrunn') IS NULL,
       NULL,
       [JSON_VALUE(sykmelding, '$.medisinskVurdering.annenFravarsgrunn')]
     ) AS annen_fravarsgrunn,
-    
+
     -- utdypende 6.3.3 svar
     EXISTS (
       SELECT 1
