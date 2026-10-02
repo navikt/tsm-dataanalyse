@@ -1,12 +1,54 @@
 version: 2
 
 models:
-  - name: stg_regulus_maximus__sykmeldinger
-    description: "{{ doc('stg_sykmeldinger')}}"
-
+  - name: base_regulus_maximus__sykmeldinger
+    description: "{{ doc('base_sykmeldinger') }}"
     columns:
       - name: id
         description: Dette er en unik identifikator for sykmeldinger
         data_tests:
-            - unique
-            - not_null
+          - unique
+          - not_null
+      - name: sm_type
+        description: Sykmeldingstype. Styrer hvilken stg-modell raden havner i.
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['DIGITAL', 'XML', 'PAPIR', 'UTENLANDSK']
+              config:
+                severity: warn
+
+  - name: stg_regulus_maximus__sykmeldinger_digital
+    description: "{{ doc('stg_sykmeldinger_digital') }}"
+    columns:
+      - name: id
+        data_tests:
+          - unique
+          - not_null
+      - name: orgnummer_digital
+        description: Orgnummer fra metadata for digitale sykmeldinger.
+
+  - name: stg_regulus_maximus__sykmeldinger_xml
+    description: "{{ doc('stg_sykmeldinger_xml') }}"
+    columns:
+      - name: id
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_regulus_maximus__sykmeldinger_papir
+    description: "{{ doc('stg_sykmeldinger_papir') }}"
+    columns:
+      - name: id
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_regulus_maximus__sykmeldinger_utenlandsk
+    description: "{{ doc('stg_sykmeldinger_utenlandsk') }}"
+    columns:
+      - name: id
+        data_tests:
+          - unique
+          - not_null

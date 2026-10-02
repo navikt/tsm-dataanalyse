@@ -47,8 +47,20 @@ dbt (data build tool) lar deg definere SQL-transformasjoner som modeller, versjo
 ```
 
 #### staging (kilder)
-Formål: Standardisere kolonnenavn, datatyper, trimme/null-håndtere, fjerne duplikater.
-Views
+Formål: Standardiserer kolonnenavn, datatyper og fjerne duplikater.
+
+Sykmeldinger fra `regulus_maximus` har ulik JSON-struktur per type og deles derfor opp slik:
+
+```
+source(regulus_maximus)
+  └─ base/base_regulus_maximus__sykmeldinger        # ephemeral, leser kilden, felles felter + rå JSON
+       ├─ stg_regulus_maximus__sykmeldinger_digital
+       ├─ stg_regulus_maximus__sykmeldinger_xml
+       ├─ stg_regulus_maximus__sykmeldinger_papir
+       └─ stg_regulus_maximus__sykmeldinger_utenlandsk
+            └─ intermediate/int_sykmeldinger_unioned # Union
+```
+
 
 #### intermediate (transformasjonser)
 Formål: Joiner på tvers av kilder, beriker, utvider nestede data og aggregerer.

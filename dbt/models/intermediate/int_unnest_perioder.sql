@@ -4,7 +4,7 @@ WITH
           id,
           aktivitet
         FROM
-            {{ ref('stg_regulus_maximus__sykmeldinger')}}
+            {{ ref('int_sykmeldinger_unioned')}}
     ),
 
     aktivitet_flat AS (

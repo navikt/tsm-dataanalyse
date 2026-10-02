@@ -3,15 +3,20 @@ with base as (
         id,
         behandler_ids,
         sykmelder_ids,
-    from {{ ref('stg_regulus_maximus__sykmeldinger')}}
+    from {{ ref('int_sykmeldinger_unioned')}}
 ),
 
 -- Flatten behandler JSON column
 behandler_flat as (
     select
         id,
-        JSON_VALUE(item, '$.id') as id_value,
-        JSON_VALUE(item, '$.type') as id_type
+        {{ extract_json_fields(
+            'item', [
+              {'key': 'id', 'name': 'id_value'},
+              {'key': 'type', 'name': 'id_type'},
+              ]
+            )
+        }},
     from base
     cross join unnest(behandler_ids) as item
 ),
@@ -31,8 +36,13 @@ behandler_pivot as (
 sykmelder_flat as (
     select
         id,
-        JSON_VALUE(item, '$.id') as id_value,
-        JSON_VALUE(item, '$.type') as id_type
+        {{ extract_json_fields(
+            'item', [
+              {'key': 'id', 'name': 'id_value'},
+              {'key': 'type', 'name': 'id_type'},
+              ]
+            )
+        }},
     from base
     cross join unnest(sykmelder_ids) as item
 ),

@@ -1,3 +1,4 @@
+{{ config(alias='marts_validation_new') }}
 WITH
     val AS (
         SELECT
@@ -24,7 +25,7 @@ WITH
         SELECT
             id,
             sm_type
-        FROM {{ ref('stg_regulus_maximus__sykmeldinger') }}
+        FROM {{ ref('int_sykmeldinger_unioned') }}
     ),
 
     final AS (

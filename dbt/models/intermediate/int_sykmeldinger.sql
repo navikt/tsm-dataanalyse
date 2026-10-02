@@ -3,7 +3,7 @@
 WITH sykmeldinger as (
 
     SELECT *
-    from {{ ref('stg_regulus_maximus__sykmeldinger') }}
+    from {{ ref('int_sykmeldinger_unioned') }}
 
 ),
 

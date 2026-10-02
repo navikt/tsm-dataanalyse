@@ -1,10 +1,11 @@
+{{ config(alias='marts_sykmelding_new') }}   -- use marts_validation_new in marts_validation.sql
+
 WITH
     sykmeldinger AS (
         SELECT
             id,
             fom,
             tom,
-            pasient_ident,
             sm_type,
             last_status,
             avsenderSystem_navn,
@@ -12,14 +13,20 @@ WITH
             regelsettVersjon,
             helsepersonellKategori,
             prognose_arbeid,
-            prognose_hensynArbeidsplassen,
             arbeidsforEtterPeriode,
             tilbakedatering_kontaktDato,
-            tilbakedatering_begrunnelse,
             generertDato,
             generated_timestamp,
-            hoveddiagnose_system
-        FROM {{ ref('stg_regulus_maximus__sykmeldinger') }}
+            hoveddiagnose_system,
+            -- typespesifikke felter (NULL for typer som ikke har feltet)
+            metadata_type,
+            friskmelding_til_arbeidsformidling,
+            utenlandsk_land,
+            annen_fravarsgrunn,
+            hensyn_arbeidsplassen,
+            utdypende_hensyn_arbeidsplassen,
+            prognose_annet_arbeid_pa_sikt
+        FROM {{ ref('int_sykmeldinger_unioned') }}
     ),
 
     sykmeldinger_derived AS (
@@ -91,7 +98,6 @@ WITH
             sm.id,
             sm.fom,
             sm.tom,
-            --sm.pasient_ident,
             sm.sm_type,
             sm.last_status,
             sm.avsenderSystem_navn,
@@ -99,13 +105,18 @@ WITH
             sm.regelsettVersjon,
             sm.helsepersonellKategori,
             sm.prognose_arbeid,
-            sm.prognose_hensynArbeidsplassen,
             sm.arbeidsforEtterPeriode,
             sm.tilbakedatering_kontaktDato,
-            sm.tilbakedatering_begrunnelse,
             sm.generertDato,
             sm.generated_timestamp,
             sm.hoveddiagnose_system,
+            sm.metadata_type,
+            sm.friskmelding_til_arbeidsformidling,
+            sm.utenlandsk_land,
+            sm.annen_fravarsgrunn,
+            sm.hensyn_arbeidsplassen,
+            sm.utdypende_hensyn_arbeidsplassen,
+            sm.prognose_annet_arbeid_pa_sikt,
             d.mottattDato,
             d.aar,
             d.mnd,
