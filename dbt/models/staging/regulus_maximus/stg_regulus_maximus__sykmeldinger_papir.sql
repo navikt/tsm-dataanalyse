@@ -25,16 +25,17 @@ final as (
     }},
 
     DATE(JSON_VALUE(sykmelding, '$.tilbakedatering.kontaktDato')) AS tilbakedatering_kontaktDato,
+    NULLIF(TRIM(JSON_VALUE(sykmelding, '$.tilbakedatering.begrunnelse')), '') IS NOT NULL AS har_tilbakedatering_begrunnelse,
     JSON_QUERY_ARRAY(sykmelding, '$.behandler.ids') AS behandler_ids,
     JSON_QUERY_ARRAY(sykmelding, '$.sykmelder.ids') AS sykmelder_ids,
     JSON_VALUE_ARRAY(sykmelding, '$.medisinskVurdering.annenFraversArsak.arsak') AS annen_fravarsgrunn,
 
     -- kun om fritekst er oppgitt, ikke selve teksten
-    NULLIF(TRIM(JSON_VALUE(sykmelding, '$.prognose.hensynArbeidsplassen')), '') IS NOT NULL AS hensyn_arbeidsplassen,
+    NULLIF(TRIM(JSON_VALUE(sykmelding, '$.prognose.hensynArbeidsplassen')), '') IS NOT NULL AS har_hensyn_arbeidsplassen,
     CAST(JSON_VALUE(sykmelding, '$.prognose.arbeid.annetArbeidPaSikt') AS BOOL) AS prognose_annet_arbeid_pa_sikt,
 
     -- tilsvarer DIGITAL utdypendeSporsmal HENSYN_PA_ARBEIDSPLASSEN true hvis utfylt, false hvis fleltet er der men ikke utfylt, Null hvis feltet ikke er der.
-    NULLIF(TRIM(JSON_VALUE(sykmelding, '$.utdypendeOpplysninger."6.3"."6.3.3".svar')), '') IS NOT NULL AS utdypende_hensyn_arbeidsplassen,
+    NULLIF(TRIM(JSON_VALUE(sykmelding, '$.utdypendeOpplysninger."6.3"."6.3.3".svar')), '') IS NOT NULL AS har_utdypende_hensyn_arbeidsplassen,
 
   FROM sykmeldinger
 

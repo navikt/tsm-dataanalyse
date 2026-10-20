@@ -3,8 +3,8 @@ version: 2
 models:
   - name: marts_sykmelding
     description: >
-      Entitetsmart med én rad per sykmelding. Perioder og valideringsregler
-      ligger nøstet som ARRAY<STRUCT>.
+      Entitetsmart med én rad per sykmelding.
+      Valideringsregler ligger i marts_validation.
       Typespesifikke felter er NULL for typer som ikke har feltet.
     columns:
       - name: id
@@ -22,20 +22,31 @@ models:
         description: ARRAY<STRING> med AnnenFravarArsakType. Alle typer.
       - name: utenlandsk_land
         description: utenlandskInfo.land. Kun UTENLANDSK.
+      - name: har_gradert_periode
+        description: Bool. Minst en gradert periode.
 
   - name: marts_validation
     description: >
       Flat mart på regelnivå med én rad per sykmelding x valideringsregel.
-      Bærer sykmeldingskontekst (sm_type, mottattDato, aar, last_status).
     columns:
       - name: id
         description: Identifikator for sykmeldingen regelen tilhører.
         data_tests:
           - not_null
-      - name: rule_name
-        description: Navnet på valideringsregelen.
+      - name: rule_type
         data_tests:
-          - not_null
+          - accepted_values:
+              arguments:
+                values: ['OK', 'PENDING', 'INVALID']
+              config:
+                severity: warn
+      - name: validationType
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['AUTOMATIC', 'MANUAL']
+              config:
+                severity: warn
     data_tests:
       - unique:
-          column_name: "concat(id, '|', rule_name)"
+          column_name: "concat(id, '|', rule_name, '|', rule_timestamp)"

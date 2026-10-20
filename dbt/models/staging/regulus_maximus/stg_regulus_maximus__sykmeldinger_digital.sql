@@ -24,6 +24,7 @@ final as (
     -- felles for nasjonale sykmeldinger
     JSON_VALUE(sykmelding, '$.sykmelder.helsepersonellKategori') AS helsepersonellKategori,
     DATE(JSON_VALUE(sykmelding, '$.tilbakedatering.kontaktDato')) AS tilbakedatering_kontaktDato,
+    NULLIF(TRIM(JSON_VALUE(sykmelding, '$.tilbakedatering.begrunnelse')), '') IS NOT NULL AS har_tilbakedatering_begrunnelse,
     JSON_QUERY_ARRAY(sykmelding, '$.behandler.ids') AS behandler_ids,
     JSON_QUERY_ARRAY(sykmelding, '$.sykmelder.ids') AS sykmelder_ids,
 
@@ -43,7 +44,7 @@ final as (
       FROM UNNEST(JSON_QUERY_ARRAY(sykmelding, '$.utdypendeSporsmal')) AS u
       WHERE JSON_VALUE(u, '$.type') = 'HENSYN_PA_ARBEIDSPLASSEN'
         AND NULLIF(TRIM(JSON_VALUE(u, '$.svar')), '') IS NOT NULL
-    ) AS utdypende_hensyn_arbeidsplassen,
+    ) AS har_utdypende_hensyn_arbeidsplassen,
 
   FROM sykmeldinger
 

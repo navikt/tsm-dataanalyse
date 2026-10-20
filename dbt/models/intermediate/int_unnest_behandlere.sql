@@ -61,9 +61,7 @@ sykmelder_pivot as (
 -- Combine
 select
     base.id as id,
-    --b.behandler_fnr,
     b.behandler_hpr,
-    --s.sykmelder_fnr,
     s.sykmelder_hpr
 from base
 left join behandler_pivot b using(id)

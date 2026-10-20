@@ -23,5 +23,5 @@ def dbt_run_airflow(dbt_command) -> None:
 
 if __name__ == "__main__":
     logging.getLogger().setLevel(logging.INFO)
-    dbt_command = os.environ.get("dbt_command", "run")
+    dbt_command = os.environ.get("dbt_command", "build")
     dbt_run_airflow(dbt_command)

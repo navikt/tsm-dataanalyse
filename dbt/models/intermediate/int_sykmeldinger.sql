@@ -1,4 +1,3 @@
-{#jinja comments#}
 
 WITH sykmeldinger as (
 
@@ -7,7 +6,7 @@ WITH sykmeldinger as (
 
 ),
 
-some_transformation AS (
+final AS (
 
     SELECT
         id,
@@ -18,9 +17,9 @@ some_transformation AS (
         CASE
             WHEN tilbakedatering_kontaktDato is not null THEN TRUE
             ELSE FALSE
-        END AS tilbakedatert_sykmelding
+        END AS er_tilbakedatert
 
     from sykmeldinger
 )
 
-SELECT * FROM some_transformation
+SELECT * FROM final

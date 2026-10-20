@@ -26,4 +26,3 @@ SELECT
   *
 FROM
   validation_flat
-ORDER BY id
