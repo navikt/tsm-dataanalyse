@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg__sykmeldinger
+
+    columns:
+      - name: id
+        description: Dette er en unik identifikator for sykmeldinger
+        data_tests:
+            - unique
+            - not_null
+
+  - name: stg__utenlandske_sykmeldinger
+
+    columns:
+      - name: id
+        description: Dette er en unik identifikator for sykmeldinger
+        data_tests:
+            - unique
+            - not_null

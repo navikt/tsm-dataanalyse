@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+
+  - name: tsm_kafka_sink
+    database: "{{ env_var('DBT_DATABASE') }}"
+    schema: tsm_kafka_sink
+    tables:
+      - name: sykmeldinger
+      - name: sykmeldinger_utenlandsk

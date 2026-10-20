@@ -1,9 +1,0 @@
-version: 2
-
-sources:
-
-  - name: tsm_dataset
-    database: "{{ env_var('DBT_DATABASE') }}"
-    schema: tsm_dataset
-    tables:
-      - name: regulus_maximus
