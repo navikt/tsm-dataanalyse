@@ -26,7 +26,6 @@ models:
       +schema: intermediate
     marts:
       +schema: marts
-      +materialized: table
     exposed:
       +schema: exposed
     exposed_access_controlled:
