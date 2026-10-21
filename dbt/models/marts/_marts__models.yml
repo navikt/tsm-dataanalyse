@@ -2,7 +2,7 @@ version: 2
 
 models:
 
-  - name: marts_sykmeldinger
+  - name: sykmeldinger
     description: >
       Entitetsmart med én rad per sykmelding. Perioder og valideringsregler
       ligger nøstet.
@@ -13,7 +13,7 @@ models:
           - unique
           - not_null
 
-  - name: marts_perioder
+  - name: perioder
     description: >
       Entitetsmart med én rad per periode.
     columns:
@@ -28,7 +28,7 @@ models:
             - fom
             - tom
 
-  - name: marts_regelutfall
+  - name: regelutfall
     description: >
       Entitetsmart med én rad per regelutfall.
     columns:
