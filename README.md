@@ -37,21 +37,20 @@ dbt (data build tool) lar deg definere SQL-transformasjoner som modeller, versjo
 ├─ dbt/
 │  └─  macros/                          # Gjenbrukbare funksjoner / Jinja
 │  └─  models/
-│      ├─ staging/                      # Rensing og standardisering av råtabeller (en-til-en)
-│      ├─ intermediate/                 # Joiner, aggregerer og beriker (fler-til-en)
-│      ├─ marts/                        # Forretningslag (dim/ fact / datasett til rapporter)
+│      ├─ staging/                      # Rensing og standardisering. Fjerne duplikater.
+│      ├─ intermediate/                 # Joiner og aggregerer
+│      ├─ marts/                        # Forretningslag, entity marts
 │      ├─ exposed/                      # Tabeller som eksponeres på datamarkedsplassen
-│      └─ exposed_access_controlled/    # Eksponert på datamarkedsplassen, men tilgangsstyrt
+│      └─ access_controlled/    # Eksponert på datamarkedsplassen, men tilgangsstyrt
 │  └─ dbt_project.yml                   # Prosjektkonfig
 │  └─ profiles.yml                      # Definerer BigQuery-tilkobling
 ```
 
 #### staging (kilder)
 Formål: Standardisere kolonnenavn, datatyper, trimme/null-håndtere, fjerne duplikater.
-Views
 
 #### intermediate (transformasjonser)
-Formål: Joiner på tvers av kilder, beriker, utvider nestede data og aggregerer.
+Formål: Joiner på tvers. Ephemeral views.
 
 #### marts (forretnings-/analyselag)
 Formål: Entity-based models, som brukes videre til rapportering og BI.
