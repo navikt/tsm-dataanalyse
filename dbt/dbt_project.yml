@@ -23,10 +23,10 @@ models:
     staging:
       +schema: staging
     intermediate:
-      +schema: intermediate
+      +materialized: ephemeral
     marts:
       +schema: marts
     exposed:
       +schema: exposed
-    exposed_access_controlled:
-      +schema: exposed_access_controlled
+    access_controlled:
+      +schema: access_controlled
